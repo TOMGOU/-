@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <!--#include virtual="inc/meta.inc" -->
+    <title>这三国 你从未见过-真龙霸业官方网站-腾讯游戏</title>
+    <!-- 页面设计：微聚cp | 页面制作：微聚cp | 创建：2018-02-11 -->
+    
+    <style>
+        /*主体部分的css*/
+        /*侧边栏*/
+        .list .nav {padding: 0 180px;}
+        .list .nav li{width: 40px;}
+        .soliders {margin-top: 55px;}
+        .soliders ul {display: none;}
+        .soliders ul li {position: relative;float: left;margin-left: 14px;width: 190px;height: 80px;margin-bottom: 35px;background: url(ossweb-img/css_sp.png) no-repeat -15px -13px;overflow: hidden;}
+
+        .soliders ul li strong {position: relative;left: 5px;top:-10px;font-size: 70px;color: #74788b;font-weight: bold;z-index: 2;}
+        .soliders ul li span {position: relative;z-index: 999;float: right;width: 110px;font-size: 20px;color: #fff;margin: -90px 0 0 100px;}
+        .soliders ul li i{float: right;width: 33px;height: 32px;margin-right: -140px;margin-top: 41px;background: url(ossweb-img/css_sp.png) no-repeat -61px -212px;}
+        .soliders ul li img {position: absolute;top:0;left: 15px;z-index: 55;}
+        .soliders ul li.three img {left: 45px;}
+        .soliders ul li:hover {background: url(ossweb-img/css_sp.png) no-repeat -489px -13px;}
+        .soliders ul li:hover strong {color: #cfb983;}
+
+        .list-wrap .list{width: 1160px;}
+        .list .head h2 strong{font-weight: bold;color: #c4a85b;}
+        .list .head .back_home {
+            position: relative;
+            float: right;
+            font-size: 16px;
+            margin-right: 14px;
+            margin-top: 12px;
+            color: #000000;
+        }
+        .list .head .back_list {
+            position: relative;
+            float: right;
+            font-size: 16px;
+            margin-right: 100px;
+            margin-top: 12px;
+            color: #000000;
+        }
+        .list .head a.back_home:after {
+            content: "";
+            position: absolute;
+            left: -38px;
+            top: 4px;
+            width: 26px;
+            height: 16px;
+            background: url(ossweb-img/back_to_list.png) no-repeat;
+        }
+        .list .head a.back_home:before{
+            content: "/";
+            position: absolute;
+            color: #dadce0;
+            left: -72px;
+            top: 0;
+            width: 27px;
+            height: 8px;
+        }
+        .list .head a.back_list:after {
+
+
+            content: "";
+            position: absolute;
+            left: -38px;
+            top: 8px;
+            width: 27px;
+            height: 8px;
+            background: url(ossweb-img/css_sp.png) no-repeat -15px -220px;
+        }
+        .detail_box{width: 1091px;height: 435px;padding: 35px;background: url(ossweb-img/detail_box.jpg) no-repeat;}
+        .grade{width: 137px;height: 79px;border: 1px solid #434a68;font-size: 22px;}
+        .detail_info{display: inline-block;width: 525px;height: 435px;vertical-align: top;margin-left: 100px;}
+        .detail_info h3{color: #c4a85b;font-size: 32px;}
+        .detail_info p{color: #fff;font-size: 14px;margin: 20px 0 30px 0;}
+        .wrap_box{display: inline-block;width: 315px;height: 18px;background: #4f5774;vertical-align: middle;margin: 0 25px;}
+        .inner{height: 100%;background: #8b95ba;}
+        .detail_info ul{border-top: 1px solid #7b8093;}
+        .detail_info ul li{margin-top: 27px;}
+        .detail_info ul li strong,.detail_info ul li span{color: #fff;font-size: 16px;}
+        .bz-list{
+            width: 557px;
+            padding-top: 35px;
+        }
+        .box{
+            border: 1px solid #d5d7dc;
+        }
+        .bz-list h4 {
+            margin-bottom: 30px;
+            color: #666;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .bz-list h4:before {
+            content: "";
+            display: inline-block;
+            width: 6px;
+            height: 19px;
+            margin-right: 16px;
+            background: #c4a85b;
+        }
+        .first{
+            width: 100%;
+            height: 77px;
+        }
+        .first li{
+            width: 277px;
+            height: 66px;
+            line-height: 66px;
+            text-align: center;
+            border: 1px solid #d5d7dc;
+            border-top: 10px solid #d5d7dc;
+            font-size: 18px;
+            color: #434a68;
+        }
+        .first li.on{
+            border: none;
+            width: 276px;
+            border-top: 10px solid #434a68;
+        }
+        .second{width: 277px;text-align: center;padding: 30px 0;}
+        .second li{
+            display: inline-block;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background: #d5d7dc;
+            position: relative;
+        }
+        .second li img{
+            position: absolute;
+            width: 69px;
+            height: 69px;
+            top: 0;
+            right: 0;bottom: 0;
+            left: 0;
+            margin: auto;
+        }
+        .second li.on{
+            width: 75px;
+            height: 75px;
+            border: 1px solid #434a68;
+            background: #fff;
+        }
+        .second li.on img{
+            border-radius: 50%;
+            border: 1px solid #434a68;
+            background: #434a68;
+        }
+        .second li.arrow{
+            display: inline-block;
+            width: 70px;
+            height: 70px;
+            border-radius: 0;
+            background: transparent;
+            position: relative;
+        }
+        .second li.arrow img{
+            position: absolute;
+            width: 12px;
+            height: 23px;
+            top: 0;
+            right: 0;bottom: 0;
+            left: 0;
+            margin: auto;
+        }
+        .des{
+            width: 277px;
+            height: 66px;
+            font-size: 16px;
+            color: #666666;
+            line-height: 30px;
+            padding: 30px 0;
+        }
+        .article-list {
+            padding-top: 35px;
+            padding-bottom: 65px;
+        }
+        .article-list h4 {
+            float: left;
+            margin-bottom: 30px;
+            color: #666;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .article-list h4:before {
+            content: "";
+            display: inline-block;
+            width: 6px;
+            height: 19px;
+            margin-right: 16px;
+            background: #c4a85b;
+        }
+        .article-list a {
+            color: #444;
+        }
+
+        .article-list .more {
+            float: right;
+        }
+        .article-list .more:hover {
+            color: #c4a85b;
+        }
+        .article-list .more:after {
+            content: "";
+            display: inline-block;
+            position: relative;
+            top:6px;
+            width: 25px;
+            height: 25px;
+            margin-left: 8px;
+            background: url(ossweb-img/css_sp.png) no-repeat -4px -307px;
+        }
+        .article-list ul {
+            position: relative;
+            width: 1200px;
+            left: -15px;
+        }
+        .article-list ul li{
+            position: relative;
+            float: left;
+            width: 273px;
+            height: 220px;
+            margin: 0 12px 30px 12px;
+        }
+        .article-list ul li img {
+            display: block;
+            width: 273px;
+            height: 183px;
+        }
+        .article-list ul li p {
+            overflow: hidden;width: 100%;margin-top: 17px;text-overflow: ellipsis;white-space: nowrap;color: #444;font-size: 16px;
+        }
+        .article-list ul li a {position: absolute;top: 0;left: 0;width: 100%;height: 183px;background-color: rgba(0,0,0,0);z-index: 999;}
+
+        .article-list ul li:hover a:before {content:"";position: absolute;top: 0;left: 0;width: 100%;height: 100%;background-color: rgba(57,59,74,.4);}
+        .article-list ul li:hover a:after {content: "";position: absolute;top:0;left: 0;right: 0;bottom: 0;width: 48px;height: 48px;margin: auto;background: url(ossweb-img/css_sp.png) no-repeat -4px -250px;}
+        .ml{margin-left: 40px;}
+        .skill{width: 100%;height: 100px;line-height: 100px;text-align: left;border-bottom: 1px solid #d5d7dc;}
+        .skill li{
+            display: inline-block;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            border: 2px solid transparent;
+            position: relative;
+            margin: 13px 0 10px 30px;
+            vertical-align: center;
+        }
+        .skill li img{
+            position: absolute;
+            width: 68px;
+            height: 69px;
+            top: 0;
+            right: 0;bottom: 0;
+            left: 0;
+            margin: auto;
+            border-radius: 50%;
+        }
+        .skill li.on{
+            border: 2px solid #c6ab61;
+            background: #fff;
+            vertical-align: center;
+        }
+        .skill li.on:after{
+            display: block;
+            content: "";
+            position: absolute;
+            bottom: -24px;
+            left: 50%;
+            margin-left: -36px;
+            width: 72px;
+            height: 11px;
+            background: url(ossweb-img/down_on.png) no-repeat;
+        }
+        .desc{width: 527px;height: 72px;line-height: 30px;font-size: 16px;color: #666666;padding: 20px 0 20px 30px;}
+        #img_src{width: 447px;height: 435px;}
+    </style>
+</head>
+<body>
+    <div class="main">
+        <!--导航-->
+        <!--#include virtual="inc/head.inc" -->
+
+        <!--主体部分-->
+        <div class="container">
+            <div class="list-wrap clearfix">
+                <!--列表页-->
+                <div class="list fl">
+                    <div class="head clearfix">
+                        <h2><strong>步兵</strong>详解</h2>
+                        <a class="back_home" onclick="PTTSendClick('btn','back','返回列表');" href="soldierlist.html" target="_blank">返回列表</a>
+                        <a class="back_list" onclick="PTTSendClick('btn','back','返回首页');" href="index.html" target="_blank">返回首页</a>
+                    </div>
+                    <div class="detail_box">
+                        <img id="img_src" src="" alt="">
+                        <div class="detail_info">
+                            <h3 id="title">铁甲卫</h3>
+                            <p>步兵介绍：<span id="des"></span></p>
+                            <ul>
+                                <li id="attack">
+                                    <strong>攻击</strong>
+                                    <div class="wrap_box">
+                                        <div class="inner" style="width: 100px"></div>
+                                    </div>
+                                    <span>(18)</span>
+                                </li>
+                                <li id="defense">
+                                    <strong>防御</strong>
+                                    <div class="wrap_box">
+                                        <div class="inner" style="width: 100px"></div>
+                                    </div>
+                                    <span>(18)</span>
+                                </li>
+                                <li id="blood">
+                                    <strong>血量</strong>
+                                    <div class="wrap_box">
+                                        <div class="inner" style="width: 100px"></div>
+                                    </div>
+                                    <span>(18)</span>
+                                </li>
+                                <li id="load">
+                                    <strong>负重</strong>
+                                    <div class="wrap_box">
+                                        <div class="inner" style="width: 100px"></div>
+                                    </div>
+                                    <span>(18)</span>
+                                </li>
+                                <li id="speed">
+                                    <strong>速度</strong>
+                                    <div class="wrap_box">
+                                        <div class="inner" style="width: 100px"></div>
+                                    </div>
+                                    <span>(18)</span>
+                                </li>
+                                <li id="consume">
+                                    <strong>粮耗</strong>
+                                    <div class="wrap_box">
+                                        <div class="inner" style="width: 100px"></div>
+                                    </div>
+                                    <span>(18)</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="bz clearfix">
+                        <div class="bz-list fl">
+                            <div class="clearfix">
+                                <h4>兵种关系</h4>
+                                <div class="box clearfix">
+                                    <ul class="first">
+                                        <li class="fl on">克制兵种</li>
+                                        <li class="fl">被克兵种</li>
+                                    </ul>
+                                    <ul class="second fl">
+                                        <li id="pic_box" class="on"><img src="ossweb-img/t_ui_icon_bubing.png" alt=""></li>
+                                        <!--<li><img src="ossweb-img/t_ui_icon_bubing.png" alt=""></li>-->
+                                        <li class="arrow"><img src="ossweb-img/arrow_right.png" alt=""></li>
+                                    </ul>
+                                    <div id="note" class="des fl">兰陵王的隐身和秒杀能力很容易接近成吉思汗将其秒杀</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bz-list fl ml">
+                            <div class="clearfix">
+                                <h4>兵种技能</h4>
+                                <div class="box clearfix">
+                                    <ul class="skill fl">
+                                        <li class="on"><img src="ossweb-img/t_ui_icon_bubing.png" alt=""></li>
+                                        <li><img src="ossweb-img/t_ui_icon_bubing.png" alt=""></li>
+                                    </ul>
+                                    <div class="desc fl"><span>标题：</span>兰陵王的隐身和秒杀能力很容易接近成吉思汗将其秒杀</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--<div class="soliders clearfix">
+                        <div class="grade fl">
+                            兵种</br>
+                            进阶
+                        </div>
+                        <ul class="clearfix fl" style="display: block;">
+                            <li>
+                                <a href="javascript:;">
+                                    <strong>1</strong>
+                                    <img src="ossweb-img/introduction/1.png" alt="">
+                                    <span>轻甲步兵</span>
+                                    <i></i>
+                                </a>
+                            </li>
+                            <li class="right">
+                                <a href="javascript:;">
+                                    <strong>2</strong>
+                                    <img src="ossweb-img/introduction/2.png" alt="">
+                                    <span>轻甲步兵</span>
+                                    <i></i>
+                                </a>
+                            </li>
+                            <li class="three">
+                                <a href="javascript:;">
+                                    <strong>3</strong>
+                                    <img src="ossweb-img/introduction/3.png" alt="">
+                                    <span>轻甲步兵</span>
+                                    <i></i>
+                                </a>
+                            </li>
+                            <li class="right">
+                                <a href="javascript:;">
+                                    <strong>4</strong>
+                                    <img src="ossweb-img/introduction/4.png" alt="">
+                                    <span>轻甲步兵</span>
+                                    <i></i>
+                                </a>
+                            </li>
+                            <li class="center">
+                                <a href="javascript:;">
+                                    <strong>5</strong>
+                                    <img src="ossweb-img/introduction/5.png" alt="">
+                                    <span>轻甲步兵</span>
+                                    <i></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>-->
+                    <div class="article-list">
+                        <div class="clearfix">
+                            <h4>相关攻略</h4>
+                            <a href="strategy.html" onclick="PTTSendClick('btn','more','更多');" target="_blank" class="more">更多</a>
+                        </div>
+                        <ul class="clearfix">
+                            <li>
+                                <a href="javascript:;">
+                                    <img src="ossweb-img/fm.jpg" alt="">
+                                    <p>兵种相关攻略标题，这里是一个标题</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <img src="ossweb-img/fm.jpg" alt="">
+                                    <p>兵种相关攻略标题，这里是一个标题</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <img src="ossweb-img/fm.jpg" alt="">
+                                    <p>兵种相关攻略标题，这里是一个标题</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <img src="ossweb-img/fm.jpg" alt="">
+                                    <p>兵种相关攻略标题，这里是一个标题</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <img src="ossweb-img/fm.jpg" alt="">
+                                    <p>兵种相关攻略标题，这里是一个标题</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <img src="ossweb-img/fm.jpg" alt="">
+                                    <p>兵种相关攻略标题，这里是一个标题</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <img src="ossweb-img/fm.jpg" alt="">
+                                    <p>兵种相关攻略标题，这里是一个标题</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <img src="ossweb-img/fm.jpg" alt="">
+                                    <p>兵种相关攻略标题，这里是一个标题</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
+<!--#include virtual="inc/foot.inc" -->
+<script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+<script>
+    //此段代码不能放到外链JS中，
+    var setSite = { //设置网站属性
+        siteType: "os", //必填项:"os"代表是官网，如果不是，则填写actName例如a20160701xxx
+        pageType: "soldierdetail", //必填项:本页面的定位；按照页面含义填写例如main||list||detail||download||share||page1||pageN
+        pageName: "兵种详情", //必填项:页面中文名
+        osact: 1, //选填项:是否是官网专题(在官网运营的专题)boolean；默认是0；非微社区页面均是1；可以在链接上加入参数osact=1来灵活设置
+        ingame: 0, //选填项:是否投放在游戏APP内boolean；默认是0；可以在链接上加入参数ingame=1来灵活设置
+        stayTime: 0 //选填项:是否需要统计停留时长boolean；默认是0
+    }
+    if (typeof (pgvMain) == 'function') pgvMain();//千万不能忘记！
+
+
+    // tab栏切换
+    /*$(".nav li").on("mouseenter",function () {
+        var index = $(this).index();
+        $(this).addClass("on").siblings().removeClass("on");
+        $(".soliders ul").eq(index).show().siblings().hide();
+    })*/
+</script>
+<script>
+    function getUrlParam(url,parm) {
+        var reg = new RegExp("(^|&)" + parm + "=([^&]*)(&|$)");
+        var r = url.substr(url.indexOf("\?") + 1).match(reg);
+        if (r != null) return unescape(r[2]);
+        return null;
+    }
+    var detailID = getUrlParam(location.href,"id");
+    console.log(detailID)
+    var data_arr=[[[],[]],[[],[]],[[],[]],[[],[]]];
+    $.ajax({
+        type: "get",
+        url: "//3.qq.com/zlkdatasys/bzdata/"+detailID+".json?"+Math.random(),
+        async:true,
+        dataType: "jsonp",
+        jsonp: "callback",//传递给请求处理程序或页面的，用以获得jsonp回调函数名的参数名(一般默认为:callback)
+        jsonpCallback:"herodetailcallback",//自定义的jsonp回调函数名称，默认为jQuery自动生成的随机函数名，也可以写"?"，jQuery会自动为你处理数据
+        success: function(data){
+            console.log(data)
+            var title = data["bzmc_66"],
+                des = data["bzjs_af"],
+                skill = data["bzjn_df"],
+                attack = data["bznlz_9d"][0]["bzgj_a4"],
+                defense = data["bznlz_9d"][0]["bzfyz_bf"],
+                blood = data["bznlz_9d"][0]["bzxlz_a6"],
+                load = data["bznlz_9d"][0]["bzfzz_85"],
+                speed = data["bznlz_9d"][0]["bzsdz_2a"],
+                consume = data["bznlz_9d"][0]["bzlhz_a8"],
+                hold = data["bzgx_96"][0]["bzbksj_d0"],
+                holdback= data["bzgx_96"][0]["bzkzsj_fe"],
+                rel_arr = [[[],[]],[[],[]]],
+                skill_arr = [[[],[],[]],[[],[],[]]],
+                img_src = data["bzpf_c8"][0]["bztp_02"];
+            rel_arr[0][0].push(hold[0]["bzbkicon_0b"])
+            rel_arr[0][1].push(hold[0]["bzbkwb_6a"])
+            rel_arr[1][0].push(holdback[0]["bzkzicon_55"])
+            rel_arr[1][1].push(holdback[0]["bzkzwb_9c"])
+
+            $("#pic_box img").attr("src", rel_arr[0][0]);
+            $("#note").text(rel_arr[0][1]);
+            $(".first li").on("click",function(){
+                var index = $(this).index();
+                $(this).addClass("on").siblings().removeClass("on");
+                $("#pic_box img").attr("src", rel_arr[index][0]);
+                $("#note").text(rel_arr[index][1]);
+            })
+            for(var i = 0,len = skill_arr.length;i < len;i++){
+                skill_arr[i][0].push(skill[i]["bzjnicon_01"]);
+                skill_arr[i][1].push(skill[i]["bzjnbt_e8"]);
+                skill_arr[i][2].push(skill[i]["bzjnms_05"]);
+            }
+            var str = "";
+            for(var j = 0,len = skill_arr.length;j < len;j++){
+                if(j==0){
+                    str += "<li class=\"on\"><img src=\""+skill_arr[j][0]+"\"></li>"
+                }else{
+                    str += "<li><img src=\""+skill_arr[j][0]+"\"></li>"
+                }
+            }
+            var $ul = $(str);
+            $(".skill").html($ul);
+            $(".desc").html("<span>"+skill_arr[0][1]+": </span>"+skill_arr[0][2]);
+            $(".skill").on("click","li",function(){
+                var index = $(this).index();
+                $(this).addClass("on").siblings().removeClass("on");
+                $(".desc").html("<span>"+skill_arr[index][1]+": </span>"+skill_arr[index][2])
+            })
+console.log(skill_arr)
+            $("#title").text(title);
+            $("#des").text(des);
+            $("#img_src").attr("src", img_src);
+            $("#attack span").text("("+attack+")");
+            $("#defense span").text("("+defense+")");
+            $("#blood span").text("("+blood+")");
+            $("#load span").text("("+load+")");
+            $("#speed span").text("("+speed+")");
+            $("#consume span").text("("+consume+")");
+            $("#attack .inner").css({"width":attack*315/100+"px"});
+            $("#defense .inner").css({"width":defense*315/100+"px"});
+            $("#blood .inner").css({"width":blood*315/250+"px"});
+            $("#load .inner").css({"width":load*315/100+"px"});
+            $("#speed .inner").css({"width":speed*315/1000+"px"});
+            $("#consume .inner").css({"width":consume*315/5+"px"});
+
+
+        }
+
+    });
+
+</script>

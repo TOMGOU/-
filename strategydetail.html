@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <!--#include virtual="inc/meta.inc" -->
+
+    <title>这三国 你从未见过-真龙霸业官方网站-腾讯游戏</title>
+    <!-- 页面设计：微聚cp | 页面制作：微聚cp | 创建：2018-02-11 -->
+    <link rel="stylesheet" href="css/sidebar.css">
+    <style>
+        /*主体部分的css*/
+        .container {
+            padding-bottom: 115px;
+            background: url(ossweb-img/bottombg2.jpg) no-repeat bottom center;
+        }
+        .news-center {
+            width: 1160px;
+            margin: auto;
+            padding: 0 40px;
+            background: #fff;
+        }
+        .news-center-top {
+            width: 1160px;
+            height: 96px;
+            margin: auto;
+            border-bottom: 1px dashed #c6c6c6;
+            line-height: 96px;
+        }
+        .news-center-top h2 {
+            float: left;
+            color: #2c324a;
+            font-size: 34px;
+            font-weight: bold;
+        }
+        .news-center-top h2 span {
+            color: #c4a85b;
+            font: normal 15px Myriad Pro;
+        }
+        .news-center-top a {
+            position: relative;
+            float: right;
+            display: block;
+            color: #000;
+        }
+        .news-center-top a.back-list {
+            margin-right: 60px;
+        }
+        .news-center-top a.back-list:after,.news-center-top a.back-list:before {
+            content: "";
+            display: block;
+            position: absolute;
+        }
+        .news-center-top a.back-list:before {
+            top:40px;
+            left: -45px;
+            width: 26px;
+            height: 16px;
+            background: url(ossweb-img/css_sp.png) no-repeat -99px -255px;
+        }
+        .news-center-top a.back-list:after {
+            content: "/";
+            top:0;
+            right: -30px;
+            color: #d6d8dd;
+
+        }
+        .news-center-top a.back-home:before {
+            content: "";
+            display: inline-block;
+            width: 27px;
+            height: 8px;
+            margin-right: 15px;
+            background: url(ossweb-img/css_sp.png) no-repeat -15px -220px;
+        }
+        .new-title {
+            height: 112px;
+            margin-bottom: 50px;
+            padding-bottom: 15px;
+            border-bottom: 1px dashed #c6c6c6;
+            color: #666;
+        }
+        .new-title h3 {
+            height: 96px;
+            color: #444;
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            line-height: 127px;
+        }
+        .new-title span {
+            color: #666;
+        }
+        .new-title span:before {
+            content: "";
+            position: relative;
+            top:3px;
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            margin-right: 5px;
+            margin-left: 5px;
+            background: url(ossweb-img/css_sp.png) no-repeat -197px -220px;
+        }
+        .share-wrap {
+            float: right;
+        }
+        #share .tg-sns-qq {
+            background: url(ossweb-img/css_sp.png) no-repeat -223px -215px!important;
+        }
+        #share .tg-sns-wechat {
+            background: url(ossweb-img/css_sp.png) no-repeat -255px -213px!important;
+        }
+        #share .tg-sns-sina {
+            background: url(ossweb-img/css_sp.png) no-repeat -285px -214px!important;
+        }
+        .article {
+
+            position: relative;
+            padding-bottom: 85px;
+        }
+        .article:after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+        .article:before{
+            content: "";
+            position: absolute;
+            left: -40px;
+            bottom: 0;
+            display: block;
+            width: 1240px;
+            height: 1px;
+            background: #d5d7dc;
+        }
+        .article p{
+            margin: 4px 0;
+            text-indent: 2em;
+            color: #444;
+            font-size: 16px;
+            line-height: 37px;
+        }
+        .article img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 37px auto 50px;
+        }
+        .article-list {
+            padding-top: 35px;
+            padding-bottom: 65px;
+        }
+        .article-list h4 {
+            float: left;
+            margin-bottom: 40px;
+            color: #666;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .article-list h4:before {
+            content: "";
+            display: inline-block;
+            width: 6px;
+            height: 19px;
+            margin-right: 16px;
+            background: #c4a85b;
+        }
+        .article-list a {
+            color: #444;
+        }
+
+        .article-list .more {
+            float: right;
+        }
+        .article-list .more:hover {
+            color: #c4a85b;
+        }
+        .article-list .more:after {
+            content: "";
+            display: inline-block;
+            position: relative;
+            top:6px;
+            width: 25px;
+            height: 25px;
+            margin-left: 8px;
+            background: url(ossweb-img/css_sp.png) no-repeat -4px -307px;
+        }
+        .article-list ul {
+            position: relative;
+            width: 1200px;
+            left: -15px;
+        }
+        .article-list ul li{
+            position: relative;
+            float: left;
+            width: 273px;
+            height: 220px;
+            margin: 0 12px;
+        }
+        .article-list ul li img {
+            display: block;
+            width: 273px;
+            height: 183px;
+        }
+        .article-list ul li p {
+            overflow: hidden;width: 100%;margin-top: 17px;text-overflow: ellipsis;white-space: nowrap;text-align: left;color: #444;
+        }
+        .article-list ul li a {position: absolute;top: 0;left: 0;width: 100%;height: 183px;background-color: rgba(0,0,0,0);z-index: 999;}
+
+        .article-list ul li:hover a:before {content:"";position: absolute;top: 0;left: 0;width: 100%;height: 100%;background-color: rgba(57,59,74,.4);}
+        .article-list ul li:hover a:after {content: "";position: absolute;top:0;left: 0;right: 0;bottom: 0;width: 48px;height: 48px;margin: auto;background: url(ossweb-img/css_sp.png) no-repeat -4px -250px;}
+    </style>
+</head>
+<body>
+<div class="main">
+    <!--导航-->
+    <!--#include virtual="inc/head.inc" -->
+    <!--主体部分-->
+    <div class="container">
+        <!--新闻中心-->
+        <div class="news-center">
+            <div class="news-center-top">
+                <h2>攻略秘籍 <span>RAIDERS CHEATS</span></h2>
+                <a href="index.html" onclick="PTTSendClick('btn','back','返回首页');" class="back-home">返回首页</a>
+                <a href="strategy.html" onclick="PTTSendClick('btn','back','返回列表');" class="back-list">返回列表</a>
+            </div>
+            <div class="new-title">
+                <h3>这是一个攻略标题，攻略标题</h3>
+                <span>2017/01/22</span>
+                <div class="share-wrap">
+                    分享到：
+                    <div class="share" id="share"></div>
+                </div>
+            </div>
+            <div class="article">
+                <p>对于城池，大多数人现在都只是当做多一个寻将寻宝征兵的场所来使用，会通过外交换城等方式各取所需。但是本次更新后，城池将是每个联盟需要长久经营的一个势力区，而不是当做一个功能型建筑。</p>
+                <p>“城池繁荣度”是城池的一个新设定，城池繁荣度提升将会提供一个城池领地范围和该城市特殊功能的增益。而丢失城池将会使繁荣度归零，所以城池互换会使长时间的任务经营成果全部白费。</p>
+                <p>对于城池，大多数人现在都只是当做多一个寻将寻宝征兵的场所来使用，会通过外交换城等方式各取所需。但是本次更新后，城池将是每个联盟需要长久经营的一个势力区，而不是当做一个功能型建筑。</p>
+                <p>“是城池的一个新设定，城池繁荣度提升将会提供一个城池领地范围和该城市特殊功能的增益。而丢失城池将会使繁荣度归零，所以城池互换会使长时间的任务经营成果全部白费。对于城池，大多数人现在都只是当做多一个寻将寻宝征兵的场所来使用，</p>
+                <img src="ossweb-img/strategy-detail.jpg" alt="">
+                <p>对于城池，大多数人现在都只是当做多一个寻将寻宝征兵的场所来使用，会通过外交换城等方式各取所需。但是本次更新后，城池将是每个联盟需要长久经营的一个势力区，而不是当做一个功能型建筑。</p>
+                <p>“城池繁荣度”是城池的一个新设定，城池繁荣度提升将会提供一个城池领地范围和该城市特殊功能的增益。而丢失城池将会使繁荣度归零，所以城池互换会使长时间的任务经营成果全部白费。</p>
+
+            </div>
+            <!--相关攻略-->
+            <div class="article-list">
+                <div class="clearfix">
+                    <h4>相关攻略</h4>
+                    <a href="javascript:;" onclick="PTTSendClick('btn','more','更多');" class="more">更多</a>
+                </div>
+                <ul class="clearfix">
+                    <li>
+                        <a href="javascript:;" onclick="PTTSendClick('btn','qita','其他1');">
+                            <img src="ossweb-img/fm.jpg" alt="">
+                            <p>兵种相关攻略标题，这里是一个标题</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" onclick="PTTSendClick('btn','qita','其他2');">
+                            <img src="ossweb-img/fm.jpg" alt="">
+                            <p>兵种相关攻略标题，这里是一个标题</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" onclick="PTTSendClick('btn','qita','其他3');">
+                            <img src="ossweb-img/fm.jpg" alt="">
+                            <p>兵种相关攻略标题，这里是一个标题</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" onclick="PTTSendClick('btn','qita','其他4');">
+                            <img src="ossweb-img/fm.jpg" alt="">
+                            <p>兵种相关攻略标题，这里是一个标题</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+<!--#include virtual="inc/foot.inc" -->
+<script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+<script src="//ossweb-img.qq.com/images/js/share/share-min.js" charset="gb2312"></script>
+<script>
+    //此段代码不能放到外链JS中，
+    var setSite = { //设置网站属性
+        siteType: "os", //必填项:"os"代表是官网，如果不是，则填写actName例如a20160701xxx
+        pageType: "strategydetail", //必填项:本页面的定位；按照页面含义填写例如main||list||detail||download||share||page1||pageN
+        pageName: "攻略详情", //必填项:页面中文名
+        osact: 1, //选填项:是否是官网专题(在官网运营的专题)boolean；默认是0；非微社区页面均是1；可以在链接上加入参数osact=1来灵活设置
+        ingame: 0, //选填项:是否投放在游戏APP内boolean；默认是0；可以在链接上加入参数ingame=1来灵活设置
+        stayTime: 0 //选填项:是否需要统计停留时长boolean；默认是0
+    }
+    if (typeof (pgvMain) == 'function') pgvMain();//千万不能忘记！
+
+    TGshare({
+        iconSize : 24,  //分享图标的大小,16为16px X 16px，24为24px X 24px
+        snsModule : ['qq','wechat','sina'],
+        //分享类型 wechat,qq,qzone,weibo,pengyou,sina,douban,kaixin,renren
+        //默认全部加载
+        title :'真龙之业',
+        //需要自定义标题时才用到，默认拉取页面标题
+        url : location.href,
+        //需要自定义页面url时才用到，默认拉取页面url
+        picUrl : 'http://b.gtimg.com/res/2014/06/13/0/058e8b5f7aa4e83d.jpg',
+        //需要自定义主题图片才用到，默认拉取页面中第一张图片
+        snsID :'share',//自定义SNS容器ID
+        isWindow : true,     //分享打开类型，true为弹窗打开，false为新页面打开，默认为弹窗打开
+        tcss : true      //是否添加点击流，true为添加，false为不添加，默认添加
+    })
+
+</script>

@@ -1,0 +1,100 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,hr,button,article,aside,
+details,figcaption,figure,footer,header,hgroup,menu,nav,section{margin:0;padding:0}
+body{font-family:'\5FAE\8F6F\96C5\9ED1','Microsoft Yahei';padding-top:42px;background: #eceef2;min-width: 1200px;max-width: 1920px;margin:0 auto;}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { display:block; }
+table{border-collapse:collapse;border-spacing:0}
+audio,canvas,video { display: inline-block;*display: inline;*zoom: 1;}
+fieldset,img{border:0}
+a{color:#fff; text-decoration: none;}
+a,img,input,button{outline: none;}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}
+ol,ul{list-style:none}
+caption,th{text-align:left}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
+q:before,q:after{content:''}
+abbr,acronym{border:0;font-variant:normal}
+sup{vertical-align:text-top}
+i,em{font-style: normal;}
+sub{vertical-align:text-bottom}
+input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit}
+input,textarea,select{*font-size:100%}
+.clearfix:after{content: "";display: block;clear: both;}
+.clearfix{zoom: 1;}
+.fl{float: left;}
+.fr{float: right;}
+.spr{background:url(../ossweb-img/spr.png) no-repeat 0 0;}
+.q:after{display:block;content:'';clear: both;}
+.q{*zoom:1;}
+.po{position:absolute;top:0;left:0;right:0;margin: auto;bottom:0;}
+.wrap{position:relative;min-width: 1240px;overflow: hidden;}
+.wrap_box{width:1240px;margin:40px auto;}
+.wrap_box h3{font-size:32px;font-weight: bold;color:#000;overflow:hidden;}
+.wrap_box h3 strong{font-size:15px;color:#c4a85b;line-height: 100%;float:left;margin:10px 0 0 10px;font-weight: normal;}
+.wrap_box h3 span{float:left;}
+.wrap_box h3 i{font-size:12px;color:#545454;line-height: 100%;display: block;}
+.content_wrap{background:url(../ossweb-img/bottombg.jpg) no-repeat 50% bottom;margin:-789px auto 0;;position:relative;z-index: 123;}
+/* 导航条 */
+.wrap_ied a {color: #898989;}
+.sp{background: url(../ossweb-img/css_sp.png) no-repeat}
+/* 首屏图banner图 */
+.header_wrap{background:url(../ossweb-img/insigebg.jpg) no-repeat 50% 80px;}
+/* 导航条 */
+#header {height:1055px;overflow: hidden;}
+#header h1 {width:1240px; margin:0 auto; position: relative; z-index: 2;height:80px;}
+#header h1 a {display:block; width:150px; height: 82px; overflow: hidden; position: relative;}
+#header h2{height:80px;background:#171112; background: #fff url(../ossweb-img/navbg.jpg) no-repeat 0 0;; position: absolute; left:0; top:0; width: 100%; text-indent: -9999px; z-index: 1;}
+#nav {height:80px; margin-top:-80px;}
+#nav ul {width:926px; margin: 0 auto; position: relative;z-index: 3;}
+#nav li {width:140px; float:left;}
+#nav li a{width:100px; height:82px; display: block; padding:20px 0 2px; margin:0 auto; color:#000; font-size:16px; text-align: center; line-height: 34px;box-sizing: border-box;position:relative;z-index: 4;}
+#nav li a:after{;position:absolute;bottom:0;left:0;width: 100%;height:4px;background: #c4a85b;content:'';display:none;}
+#nav li.on a:after{display: block;}
+#nav li.on a{color:#c4a85b}
+/* #nav li.on li a:after{display: none} */
+#nav li li{position:relative;}
+#nav li a:hover:after,#nav li:hover a:after{display:block;}
+#nav li a:hover li a:after,#nav li:hover li a:after{display:none;}
+#nav li li:hover a:after{display:block;content: '';width:4px;height:14px;position:absolute;background:#c4a85b;top:16px;}
+#nav li em{font-style: normal; color:#595554; font-size:10px;text-transform:uppercase;font-family:Tahoma; display:block;}
+#nav li ul {width:100%; margin:-2px auto 0; background:#fff;background:rgba(255,255,255,0.8);;overflow: hidden;height:0;}
+#nav li li {width:100%; float:none;height:inherit;;}
+#nav li li a {padding:0; height: auto; line-height: 46px; font-size:14px;border:none;position:relative;border-bottom:1px solid #ccc;}
+#nav li.on li a{color:#000;}
+#nav li:hover ul{height:inherit;}
+#nav #tg-sns:hover{cursor: default}
+#nav #tg-sns{width:190px;position:absolute;top:20px;right:-150px;;}
+#nav #tg-sns a{margin-right: 10px;}
+#nav #tg-sns:hover a{;color:#000;}
+#nav #tg-sns:hover a:after{display:none;}
+#nav #tg-sns a:hover:after{display:none;}
+#nav #tg-sns a{background:url(../ossweb-img/spr.png) no-repeat 0 0;width:40px;height:40px;border:1px solid #d4d4d4;border-radius:4px;box-sizing: border-box;}
+#nav #tg-sns a.tg-sns-qq{background-position:5px -290px;}
+#nav #tg-sns a.tg-sns-wechat{background-position:3px -225px;}
+#nav #tg-sns a.tg-sns-sina{background-position:3px -258px;}
+#nav #tg-sns a.tg-sns-buluo{background-position:3px -193px;margin:0;}
+.tg-sns{float:right;}
+
+/* 底部 */
+#footer_ied{background:#000;text-align: center;padding:30px 0;}
+#footer_ied a,#footer_ied p{color:#acacac;line-height: 1.5;font-size:16px;}
+
+
+
+
+
+
+/* 公用内页 */
+.container{margin-top:-370px;position: relative;z-index: 123;}
+.container .list-wrap {    width: 1240px;    margin: 0 auto 128px;}
+.list-wrap .list {    width: 900px;    padding: 30px 40px 0;    background-color: #fbfbfb;}
+.list .head h2 {    float: left;    margin-bottom: 42px;    color: #2c324a;    font-size: 34px;    font-weight: bold;}
+.list .head h2 span {    color: #c4a85b;    font-size: 16px;    font-weight: normal;    letter-spacing: 3px;}
+.list .head a {    position: relative;    float: right;    font-size: 16px;    margin-right: 14px;    margin-top: 12px;    color: #000000;}
+.list .head a:after {    content: "";    position: absolute;    left: -38px;    top:8px;    width: 27px;    height: 8px;    background: url(../ossweb-img/css_sp.png) no-repeat -15px -220px;}
+.list .nav {    height: 67px;    border: 1px solid #d5d7dc;    line-height: 67px;    text-align: center;}
+.list .nav li{    position: relative;    display: inline-block;    margin: 0 40px;    font-weight: bold;    text-align: center;    cursor: pointer;}
+.list .nav li:after {    content: "/";    position: absolute;    top:0;    right: -40px;    color: #d2d2d2;    font-weight: normal;}
+.list .nav li.last:after {    content: "";}
+.list .nav li.on {    color: #c4a85b;    font-weight: bold;    border-top: 4px solid #c4a85b;    line-height: 60px;}
+.newslist {    margin-top: 38px;}
+.video_box{display:none;}

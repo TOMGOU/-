@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <!--#include virtual="inc/meta.inc" -->
+    <!-- 页面设计：微聚cp | 页面制作：微聚cp | 创建：2018-02-11 -->
+    <title>这三国 你从未见过-真龙霸业官方网站-腾讯游戏</title>
+    <link rel="stylesheet" href="css/sidebar.css">
+    <style>
+        /*主体部分的css*/
+        #header {
+            height: 720px;
+        }
+        .header_wrap {
+            background: url(ossweb-img/characterbg.jpg) no-repeat;
+        }
+        .container {
+            width: 1240px;
+            margin: -640px auto 0;
+        }
+        .list-wrap {
+            position: relative;
+        }
+        .list-wrap .mesg {
+            position: relative;
+            width: 1240px;
+            height: 590px;
+            padding-top: 80px;
+        }
+        .list-wrap .mesg h3 {
+            display: inline-block;
+            font-size: 50px;
+            color: #c4a85b;
+            font-weight: bold;
+        }
+        .mesg .trait {
+            position: relative;
+            top:-15px;
+            display: inline-block;
+            width: 233px;
+            height: 52px;
+            color: #fff;
+            text-align: center;
+            line-height: 32px;
+        }
+        .mesg .trait img {
+            position: relative;
+            top:-2px;
+            width: 52px;
+            height: 52px;
+            vertical-align: middle;
+            z-index: 99;
+        }
+        .mesg .trait .trait1 {
+            position: relative;
+            display: inline-block;
+            width: 86px;
+            height: 32px;
+            margin-left: -28px;
+            background: #5a565a;
+            z-index: 1;
+        }
+        .mesg .trait .trait2 {
+            display: inline-block;
+            width: 106px;
+            height: 32px;
+            background: #b19d64;
+        }
+        .mesg .article {
+            width: 463px;
+            color: #aeb0ba;
+            padding-top: 13px;
+            padding-bottom: 25px;
+            margin-bottom: 60px;
+            border-top: 1px solid #747a94;
+            border-bottom: 1px solid #747a94;
+            line-height: 30px;
+        }
+        .mesg ul {
+            width: 470px;
+        }
+        .mesg ul li {
+            margin-bottom: 25px;
+        }
+        .mesg ul li span {
+            margin: 0 5px;
+            color: #fff;
+        }
+        .mesg ul li i{
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            vertical-align: middle;
+        }
+        .mesg ul li.one i {
+            background-position: -11px -383px;
+        }
+        .mesg ul li.two i{
+            background-position: -51px -383px;
+        }
+        .mesg ul li.three i {
+            background-position: -89px -383px;
+        }
+        .mesg ul li .progress-wrap {
+            position: relative;
+            display: inline-block;
+            width: 313px;
+            height: 17px;
+            background: #3d4363;
+            vertical-align: middle;
+        }
+        .mesg ul li .progress-wrap .progress {
+            position: absolute;
+            top:0;
+            left: 0;
+            width: 50%;
+            height: 100%;
+            background: #8b95ba;
+        }
+        .img-right {
+           position: absolute;
+            right: 0;
+            top:0;
+        }
+        .img-right img {
+            display: block;
+            /*width: 797px;*/
+            height: 670px;
+        }
+        .list-btn {
+            position: absolute;
+            right: 0;
+            top:84px;
+        }
+        .list-btn a {
+            position: relative;
+            display: block;
+            width: 84px;
+            height: 43px;
+            margin-bottom: 15px;
+            background: #000;
+            background: rgba(0,0,0,.5);
+            padding-left: 83px;
+            line-height: 43px;
+            color:#d6d6d8;;
+        }
+        .list-btn a.back-list:after {
+            content: "";
+            position: absolute;
+            left: 30px;
+            top:15px;
+            width: 26px;
+            height: 16px;
+            background: url(ossweb-img/css_sp.png) no-repeat -99px -255px;
+        }
+        .list-btn a.back-home:after {
+            content: "";
+            position: absolute;
+            top: 18px;
+            left: 30px;
+            width: 27px;
+            height: 8px;
+            background: url(ossweb-img/css_sp.png) no-repeat -15px -220px;
+        }
+        .mesg-wrap {
+            position: relative;
+            margin-top: -50px;
+            padding:  70px 39px 60px;
+            z-index: 999;
+            background: #fff;
+        }
+        .mesg-wrap .top .detail-left{
+            float: left;
+            width: 660px;
+            height: 355px;
+            border: 1px solid #d5d7dc;
+        }
+        .mesg-wrap .top .detail-left h4,.list-right h4 {
+            position: relative;
+            top:-50px;
+            color: #2c324a;
+            font-weight: bold;
+            font-size: 24px;
+        }
+        .mesg-wrap .top .detail-left h4:before,.list-right h4:before {
+            content: "";
+            display: inline-block;
+            width: 6px;
+            height: 19px;
+            margin-right: 16px;
+            background: #c4a85b;
+            vertical-align: middle;
+        }
+        .mesg-wrap .top .detail-left ul {
+            margin-top: -30px;
+            border-bottom: 1px solid #d5d7dc;
+            padding-left: 35px;
+        }
+        .mesg-wrap .top .detail-left ul li {
+            float: left;
+            position: relative;
+            width: 72px;
+            height: 72px;
+            padding-top: 23px;
+            margin: 0 10px;
+            text-align: center;
+            cursor: pointer;
+        }
+        .mesg-wrap .top .detail-left ul li.on {
+            border-bottom: 1px solid #c4a85b;
+        }
+        .mesg-wrap .top .detail-left ul li.on:after {
+            content: "";
+            position: absolute;
+            bottom:-22px;
+            left: 50%;
+            width: 0;
+            height: 0;
+            margin-left: -10px;
+            border:10px solid transparent;
+            border-top-color: #c4a85b;
+            z-index: 55;
+        }
+        .mesg-wrap .top .detail-left ul li.on:before {
+            content: "";
+            position: absolute;
+            bottom:-17px;
+            left: 50%;
+            width: 0;
+            height: 0;
+            margin-left: -9px;
+            border:9px solid transparent;
+            border-top-color: #fff;
+            z-index: 99;
+        }
+        .mesg-wrap .top .detail-left ul li img{
+            width: 52px;
+            height: 52px;
+            border-radius: 50%;
+        }
+        .description {
+            margin-top: 34px;
+            padding-left: 33px;
+        }
+        .description p {
+            width: 590px;
+            margin-bottom: 34px;
+        }
+        .description p strong {
+            display: block;
+            margin-bottom: 10px;
+            color: #c4a85b;
+            font-weight: bold;
+        }
+        .description p em {
+            display: block;
+            margin-bottom: 10px;
+            color: #444;
+            font-weight: bold;
+        }
+        .description p span {
+            line-height: 26px;
+        }
+
+        /*列表*/
+        .list-right {
+            position: relative;
+            float: right;
+            width: 468px;
+            height: 355px;
+            border: 1px solid #d5d7dc;
+        }
+        .list-right ul {
+            margin-top: -30px;
+            padding: 5px 20px 30px;
+            height: 310px;
+            overflow: hidden;
+
+        }
+        .list-right ul li {
+            height: 46px;
+            line-height: 46px;
+            border-bottom: 1px dashed #cacaca;
+        }
+        .list-right ul li a {
+            color: #444;
+        }
+        .list-right ul li a span {
+            float: left;
+            overflow: hidden;
+            width: 340px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .list-right ul li a em {
+            float: right;
+        }
+        .list-right ul li a:hover span {
+            color: #c4a85b
+        }
+        .list-right ul li:nth-last-child(1) {
+            border: none;
+        }
+
+        .bottom {
+            padding-top: 35px;
+            padding-bottom: 65px;
+        }
+        .bottom h4 {
+            float: left;
+            margin-bottom: 40px;
+            color: #666;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .bottom h4:before {
+            content: "";
+            display: inline-block;
+            width: 6px;
+            height: 19px;
+            margin-right: 16px;
+            background: #c4a85b;
+        }
+        .bottom a {
+            color: #444;
+        }
+
+        .bottom .more {
+            float: right;
+        }
+        .bottom .more:hover {
+            color: #c4a85b;
+        }
+        .bottom .more:after {
+            content: "";
+            display: inline-block;
+            position: relative;
+            top:6px;
+            width: 25px;
+            height: 25px;
+            margin-left: 8px;
+            background: url(ossweb-img/css_sp.png) no-repeat -4px -307px;
+        }
+        .bottom ul {
+            position: relative;
+            width: 1200px;
+            left: -15px;
+        }
+        .bottom ul li{
+            position: relative;
+            float: left;
+            width: 273px;
+            height: 220px;
+            margin: 0 12px 30px;
+        }
+        .bottom ul li img {
+            display: block;
+            width: 273px;
+            height: 183px;
+        }
+        .bottom ul li p {
+            overflow: hidden;width: 100%;margin-top: 17px;text-overflow: ellipsis;white-space: nowrap;text-align: left;color: #444;
+        }
+        .bottom ul li a {position: absolute;top: 0;left: 0;width: 100%;height: 183px;background-color: rgba(0,0,0,0);z-index: 999;}
+
+        .bottom ul li:hover a:before {content:"";position: absolute;top: 0;left: 0;width: 100%;height: 100%;background-color: rgba(57,59,74,.4);}
+        .bottom ul li:hover a:after {content: "";position: absolute;top:0;left: 0;right: 0;bottom: 0;width: 48px;height: 48px;margin: auto;background: url(ossweb-img/css_sp.png) no-repeat -4px -250px;}
+    </style>
+</head>
+<body>
+<div class="main">
+    <!--导航-->
+    <!--#include virtual="inc/head.inc" -->
+    <!--主体部分-->
+    <div class="container">
+        <div class="list-wrap clearfix">
+            <div class="mesg">
+                <h3 id="name">大乔</h3>
+                <p class="trait">
+                    <img src="ossweb-img/t_ui_icon_gongbing.png" alt="">
+                    <span class="trait1">弓将</span>
+                    <span class="trait2">突袭/辅助</span>
+                </p>
+                <p class="article">
+                    字玄德，三国时期蜀汉开国皇帝。主动技和怒气技，都可对前排近战部队产生极大的防护作用字玄德，三国时期蜀汉开国皇帝。主动技和怒气技，都可对前排近战部队产生极大的防护作用字玄德，三国时期蜀汉开国皇帝。主动技和怒气技，都可对前排近战部队产生极大的防护作用字玄德，三国时期蜀汉开国皇帝。
+                </p>
+                <ul>
+                    <li class="one">
+                        <i class="sp"></i>
+                        <span>武力</span>
+                        <div class="progress-wrap">
+                            <div class="progress"></div>
+                        </div>
+                        <span id="power">（77）</span>
+                    </li>
+                    <li class="two">
+                        <i class="sp"></i>
+                        <span>智谋</span>
+                        <div class="progress-wrap">
+                            <div class="progress"></div>
+                        </div>
+                        <span id="wisdom">（77）</span>
+                    </li>
+                    <li class="three">
+                        <i class="sp"></i>
+                        <span>统帅</span>
+                        <div class="progress-wrap">
+                            <div class="progress"></div>
+                        </div>
+                        <span id="lead">（77）</span>
+                    </li>
+                </ul>
+                <div class="img-right">
+                     <img id="pic" src="" alt="">
+                </div>
+            </div>
+            <div class="list-btn">
+                <a href="characterlist.html" class="back-list" onclick="PTTSendClick('container','backlist','返回列表');">返回列表</a>
+                <a href="index.html" class="back-home" onclick="PTTSendClick('container','backhome','返回首页');">返回首页</a>
+            </div>
+            <!--内容区域-->
+            <div class="mesg-wrap">
+                <div class="top q">
+                    <div class="detail-left">
+                        <h4>武将技能</h4>
+                        <ul id="skill_name" class="q">
+                            <li class="on">
+                                <img src="" alt="">
+                            </li>
+                            <li>
+                                <img src="" alt="">
+                            </li>
+                        </ul>
+                        <div class="description">
+                            <p>
+                                <strong id="skill_title">技能标题技能</strong>
+                                <span id="skill_des">技能描述技能描述技能描述技能描述技能描述技能描述技能描述技能描述技能描述技能描述技能描述</span>
+                            </p>
+                            <p>
+                                <em id="use_title">使用技巧</em>
+                                <span id="use_des">技能描述技能描述技能描述技能描述技能描述技能描述技能描述技能描述技能描述技能描述技能描述</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="list-right">
+                        <h4>新手攻略</h4>
+                        <ul>
+                            <li>
+                                <a href="javascript:;">
+                                    <span>真龙双十一来袭，双重惊喜购不停 </span>
+                                    <em>12/21</em>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <span>真龙双十一来袭，双重惊喜购不停 </span>
+                                    <em>12/21</em>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <span>真龙双十一来袭，双重惊喜购不停 </span>
+                                    <em>12/21</em>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <span>真龙双十一来袭，双重惊喜购不停 </span>
+                                    <em>12/21</em>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <span>真龙双十一来袭，双重惊喜购不停 </span>
+                                    <em>12/21</em>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <span>真龙双十一来袭，双重惊喜购不停 </span>
+                                    <em>12/21</em>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <span>真龙双十一来袭，双重惊喜购不停 </span>
+                                    <em>12/21</em>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <span>真龙双十一来袭，双重惊喜购不停 </span>
+                                    <em>12/21</em>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--相关攻略-->
+                <div class="bottom">
+                    <div class="clearfix">
+                        <h4>相关攻略</h4>
+                        <a href="strategy.html" class="more" onclick="PTTSendClick('container','more','攻略');">更多</a>
+                    </div>
+                    <ul class="clearfix">
+                        <li>
+                            <a href="javascript:;">
+                                <img src="ossweb-img/fm.jpg" alt="">
+                                <p>兵种相关攻略标题，这里是一个标题</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="ossweb-img/fm.jpg" alt="">
+                                <p>兵种相关攻略标题，这里是一个标题</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="ossweb-img/fm.jpg" alt="">
+                                <p>兵种相关攻略标题，这里是一个标题</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="ossweb-img/fm.jpg" alt="">
+                                <p>兵种相关攻略标题，这里是一个标题</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="ossweb-img/fm.jpg" alt="">
+                                <p>兵种相关攻略标题，这里是一个标题</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="ossweb-img/fm.jpg" alt="">
+                                <p>兵种相关攻略标题，这里是一个标题</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="ossweb-img/fm.jpg" alt="">
+                                <p>兵种相关攻略标题，这里是一个标题</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="ossweb-img/fm.jpg" alt="">
+                                <p>兵种相关攻略标题，这里是一个标题</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>
+<!--#include virtual="inc/foot.inc" -->
+<script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+<script>
+    //此段代码不能放到外链JS中，
+    var setSite = { //设置网站属性
+        siteType: "os", //必填项:"os"代表是官网，如果不是，则填写actName例如a20160701xxx
+        pageType: "characterdetail", //必填项:本页面的定位；按照页面含义填写例如main||list||detail||download||share||page1||pageN
+        pageName: "武将详情", //必填项:页面中文名
+        osact: 1, //选填项:是否是官网专题(在官网运营的专题)boolean；默认是0；非微社区页面均是1；可以在链接上加入参数osact=1来灵活设置
+        ingame: 0, //选填项:是否投放在游戏APP内boolean；默认是0；可以在链接上加入参数ingame=1来灵活设置
+        stayTime: 0 //选填项:是否需要统计停留时长boolean；默认是0
+    }
+    if (typeof (pgvMain) == 'function') pgvMain();//千万不能忘记！
+</script>
+<script>
+    function getUrlParam(url,parm) {
+        var reg = new RegExp("(^|&)" + parm + "=([^&]*)(&|$)");
+        var r = url.substr(url.indexOf("\?") + 1).match(reg);
+        if (r != null) return unescape(r[2]);
+        return null;
+    }
+    var detailID = getUrlParam(location.href,"id");
+    // console.log(detailID)
+
+    $.ajax({
+        type: "get",
+        url: "//3.qq.com/zlkdatasys/"+detailID+".json?"+Math.random(),
+        async:true,
+        dataType: "jsonp",
+        jsonp: "callback",//传递给请求处理程序或页面的，用以获得jsonp回调函数名的参数名(一般默认为:callback)
+        jsonpCallback:"herodetailcallback",//自定义的jsonp回调函数名称，默认为jQuery自动生成的随机函数名，也可以写"?"，jQuery会自动为你处理数据
+        success: function(data){
+            console.log(data)
+            var img = ["t_ui_icon_chebing.png"]
+            var name = data["wjmc_1f"],
+                category = data["xttd_79"],
+                power = data["wjnlz_09"][0]["wjwlz_0d"],
+                wisdom = data["wjnlz_09"][0]["wjzmz_1f"],
+                lead = data["wjnlz_09"][0]["wjtsz_b8"],
+                des = data["bjgs_f9"],
+                skill = data["wjjn_82"],
+                types = '',
+                types_arr=["ossweb-img/t_ui_icon_bubing.png","ossweb-img/t_ui_icon_qibing.png","ossweb-img/t_ui_icon_gongbing.png","ossweb-img/t_ui_icon_chebing.png"]
+                str = "",
+                pic = data["wjtp_c4"];
+            if(data["wjlx_28"] == "步将"){
+                types = types_arr[0]
+            }else if(data["wjlx_28"] == "骑将"){
+                types = types_arr[1]
+            }else if(data["wjlx_28"] == "攻将"){
+                types = types_arr[2]
+            }else{
+                types = types_arr[3]
+            }
+
+            $("#name").text(name);
+            $(".trait img").attr("src",types);
+            $("#pic").attr("src",pic);
+            $(".trait1").text(data["wjlx_28"]);
+            $(".trait2").text(category);
+            $(".article").text(des);
+            $("#power").text("("+power+")");
+            $("#wisdom").text("("+wisdom+")");
+            $("#lead").text("("+lead+")");
+            $(".progress").eq(0).css({"width":power*313/100+"px"});
+            $(".progress").eq(1).css({"width":wisdom*313/100+"px"});
+            $(".progress").eq(2).css({"width":lead*313/100+"px"});
+
+            for(var i = 0,len = skill.length;i < len;i++){
+                str += '<li><img src="'+skill[i]["wjjnicon_4c"]+'" alt=""></li>';
+            }
+            var $li = $(str);
+            $("#skill_name").html($li);
+            $("#skill_name").find("li").eq(0).addClass("on").siblings().removeClass("on");
+            $("#skill_title").text(skill[0]["wjjnmc_ac"])
+            $("#skill_des").text(skill[0]["wjjnms_92"])
+            $("#use_des").text(skill[0]["wjjnsyjq_43"])
+
+            $("#skill_name").on("click","li",function(){
+                $(this).addClass("on").siblings().removeClass("on")
+                var index = $(this).index();
+                $("#skill_title").text(skill[index]["wjjnmc_ac"])
+                $("#skill_des").text(skill[index]["wjjnms_92"])
+                $("#use_des").text(skill[index]["wjjnsyjq_43"])
+            })
+        }
+    });
+</script>

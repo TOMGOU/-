@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--#include virtual="inc/meta.inc" -->
+  <link rel="stylesheet" href="css/index.css">
+  <title>这三国 你从未见过-真龙霸业官方网站-腾讯游戏</title>
+  <style>
+  .main{width: 1240px;margin: 0 auto;}
+  </style>
+</head>
+<body>
+ <ul id="fixed-nav">
+  <li class='ljyy spr'><a href="javascript:;">立即预约<i>APPOINTMENT</i></a></li>
+  <li class='xwgg'><i class='spr'></i><a href="javascript:scroller.init('release',500);" onclick="PTTSendClick('nav','tab1','新闻公告');"><b></b>新闻公告<em></em></a></li>
+  <li class='yxzl'><a href="javascript:scroller.init('datum',500);" onclick="PTTSendClick('nav','tab2','游戏资料');"><b></b>游戏资料<em></em></a></li>
+  <li class='yxts'><a href="javascript:scroller.init('officer_feature',500);" onclick="PTTSendClick('nav','tab1','新闻公告');"><b></b>游戏特色<em></em></a></li>
+  <li class='yxgl'><a href="javascript:scroller.init('strategy_box',500);" onclick="PTTSendClick('nav','tab2','游戏攻略');"><b></b>游戏攻略<em></em></a></li>
+  <li class='trnr'><a href="javascript:scroller.init('share_box',500);" onclick="PTTSendClick('nav','tab3','同人内容');"><b></b>同人内容<em></em></a></li>
+  <li class='zbzq'><a href="javascript:scroller.init('video_box',500);" onclick="PTTSendClick('nav','tab4','主播专区');"><b></b>主播专区<em></em></a></li>
+  <li class='top'><a href="javascript:scroller.init('giftleft',500);" class='spr' onclick="PTTSendClick('nav','top','返回顶部');">TOP</a></li>
+ </ul>
+<!--#include virtual="inc/head.inc" -->
+ <div class="content_wrap q">
+    <div class="content q" id='release'>
+     <div class="main q">
+          <ul class="download">
+              <li class="download_btn"><a  href="javascript:;" target="_blank" class="spr" onclick="PTTSendClick('header','download','立即预约');">立即预约 <span>APPOINTMENT</span></a></li>
+              <li class='side'>
+               <a class='test' href='javascript:;' onclick="PTTSendClick('side','side1','主公测试');"><i class='spr'></i>主公测试</a>
+               <a class='data' href='javascript:;' onclick="PTTSendClick('side','side2','游戏资料');"><i class='spr'></i>游戏资料</a>
+               <a class='special' href='javascript:;' onclick="PTTSendClick('side','side3','真龙专题');"><i class='spr'></i>真龙专题</a>
+               <a class='feat' href='javascript:;' onclick="PTTSendClick('side','side4','新手攻略');"><i class='spr'></i>新手攻略</a>
+              </li>
+          </ul>
+          <div class="ggBox swiper-container" id="ggBox">
+            <ul id='ggBox_img' class='swiper-wrapper'>
+              <li class='swiper-slide'><a href="javascript:;" onclick="PTTSendClick('ggbox','slide1','轮播图1');"><img src="ossweb-img/a.jpg" alt="轮播图1"></a></li>
+              <li class='swiper-slide'><a href="javascript:;" onclick="PTTSendClick('ggbox','slide2','轮播图2');"><img src="ossweb-img/b.jpg" alt="轮播图2"></a></li>
+              <li class='swiper-slide'><a href="javascript:;" onclick="PTTSendClick('ggbox','slide3','轮播图3');"><img src="ossweb-img/c.jpg" alt="轮播图2"></a></li>
+            </ul>
+            <ol id='ggbox_switch'>
+             <li class='on'></li>
+             <li></li>
+            </ol>
+          </div>
+          <div class="news" id="news">
+              <ul class="news_nav" id="news_nav">
+                  <li><a target="_blank" href="javascript:;" class="cur" onclick="PTTSendClick('header','all','全部');">全部</a></li>
+                  <li><a target="_blank" href="javascript:;" onclick="PTTSendClick('header','news','新闻');">新闻</a></li>
+                  <li><a target="_blank" href="javascript:;" onclick="PTTSendClick('header','notice','公告');">公告</a></li>
+                  <li><a target="_blank" href="javascript:;" onclick="PTTSendClick('header','activity','活动');">活动</a></li>
+              </ul>
+              <a href="newslist.html" class='more'><i class='spr'>+</i></a>
+              <ul class="news_list cur">
+                  <li><a target="_blank" href="newslist.html" onclick="PTTSendClick('aside','news1','新闻1')">【新闻】</a><a target="_blank" href="newsdetail.html" class="news_title" onclick="PTTSendClick('aside','newcontent1','新闻内容1')">真龙霸业4</a></li>
+                 <li><a target="_blank" href="newslist.html" onclick="PTTSendClick('aside','news2','新闻2')">【新闻】</a><a target="_blank" href="newsdetail.html" class="news_title" onclick="PTTSendClick('aside','newcontent2','新闻内容2')">真龙霸业</a></li>
+                 <li><a target="_blank" href="newslist.html" onclick="PTTSendClick('aside','news3','新闻3')">【新闻】</a><a target="_blank" href="newsdetail.html" class="news_title" onclick="PTTSendClick('aside','newcontent3','新闻内容3')">真龙霸业</a></li>
+                 <li><a target="_blank" href="newslist.html" onclick="PTTSendClick('aside','news4','新闻4')">【新闻】</a><a target="_blank" href="newsdetail.html" class="news_title" onclick="PTTSendClick('aside','newcontent4','新闻内容4')">真龙霸业</a></li>
+                 <li><a target="_blank" href="newslist.html" onclick="PTTSendClick('aside','news5','新闻5')">【新闻】</a><a target="_blank" href="newsdetail.html" class="news_title" onclick="PTTSendClick('aside','newcontent5','新闻内容5')">真龙霸业</a></li>
+                 <li><a target="_blank" href="newslist.html" onclick="PTTSendClick('aside','news5','新闻5')">【新闻】</a><a target="_blank" href="newsdetail.html" class="news_title" onclick="PTTSendClick('aside','newcontent5','新闻内容5')">真龙霸业</a></li>
+                 <li><a target="_blank" href="newslist.html" onclick="PTTSendClick('aside','news5','新闻5')">【新闻】</a><a target="_blank" href="newsdetail.html" class="news_title" onclick="PTTSendClick('aside','newcontent5','新闻内容5')">真龙霸业</a></li>
+                 <li><a target="_blank" href="newslist.html" onclick="PTTSendClick('aside','news5','新闻5')">【新闻】</a><a target="_blank" href="newsdetail.html" class="news_title" onclick="PTTSendClick('aside','newcontent5','新闻内容5')">真龙霸业</a></li>
+                 <li><a target="_blank" href="newslist.html" onclick="PTTSendClick('aside','news5','新闻5')">【新闻】</a><a target="_blank" href="newsdetail.html" class="news_title" onclick="PTTSendClick('aside','newcontent5','新闻内容5')">真龙霸业</a></li>
+              </ul>
+              <ul class="news_list">
+                <li><a target="_blank" href="javascript:;" onclick="PTTSendClick('aside','news1','新闻1')">【新闻】</a><a target="_blank" href="javascript:;" class="news_title" onclick="PTTSendClick('aside','newcontent1','新闻内容1')">真龙霸业2</a></li>
+                <li><a target="_blank" href="javascript:;" onclick="PTTSendClick('aside','news2','新闻2')">【新闻】</a><a target="_blank" href="javascript:;" class="news_title" onclick="PTTSendClick('aside','newcontent2','新闻内容2')">真龙霸业</a></li>
+                <li><a target="_blank" href="javascript:;" onclick="PTTSendClick('aside','news3','新闻3')">【新闻】</a><a target="_blank" href="javascript:;" class="news_title" onclick="PTTSendClick('aside','newcontent3','新闻内容3')">真龙霸业</a></li>
+                <li><a target="_blank" href="javascript:;" onclick="PTTSendClick('aside','news4','新闻4')">【新闻】</a><a target="_blank" href="javascript:;" class="news_title" onclick="PTTSendClick('aside','newcontent4','新闻内容4')">真龙霸业</a></li>
+                <li><a target="_blank" href="javascript:;" onclick="PTTSendClick('aside','news5','新闻5')">【新闻】</a><a target="_blank" href="javascript:;" class="news_title" onclick="PTTSendClick('aside','newcontent5','新闻内容5')">真龙霸业</a></li>
+                <li><a target="_blank" href="javascript:;" onclick="PTTSendClick('aside','news5','新闻5')">【新闻】</a><a target="_blank" href="javascript:;" class="news_title" onclick="PTTSendClick('aside','newcontent5','新闻内容5')">真龙霸业</a></li>
+                <li><a target="_blank" href="javascript:;" onclick="PTTSendClick('aside','news5','新闻5')">【新闻】</a><a target="_blank" href="javascript:;" class="news_title" onclick="PTTSendClick('aside','newcontent5','新闻内容5')">真龙霸业</a></li>
+                <li><a target="_blank" href="javascript:;" onclick="PTTSendClick('aside','news5','新闻5')">【新闻】</a><a target="_blank" href="javascript:;" class="news_title" onclick="PTTSendClick('aside','newcontent5','新闻内容5')">真龙霸业</a></li>
+                <li><a target="_blank" href="javascript:;" onclick="PTTSendClick('aside','news5','新闻5')">【新闻】</a><a target="_blank" href="javascript:;" class="news_title" onclick="PTTSendClick('aside','newcontent5','新闻内容5')">真龙霸业</a></li>
+              </ul>
+              <ul class="news_list">
+                <li><a target="_blank" href="javascript:;" onclick="PTTSendClick('aside','news1','新闻1')">【新闻】</a><a target="_blank" href="javascript:;" class="news_title" onclick="PTTSendClick('aside','newcontent1','新闻内容1')">真龙霸业1</a></li>
+                <li><a target="_blank" href="javascript:;" onclick="PTTSendClick('aside','news2','新闻2')">【新闻】</a><a target="_blank" href="javascript:;" class="news_title" onclick="PTTSendClick('aside','newcontent2','新闻内容2')">真龙霸业</a></li>
+                <li><a target="_blank" href="javascript:;" onclick="PTTSendClick('aside','news3','新闻3')">【新闻】</a><a target="_blank" href="javascript:;" class="news_title" onclick="PTTSendClick('aside','newcontent3','新闻内容3')">真龙霸业</a></li>
+                <li><a target="_blank" href="javascript:;" onclick="PTTSendClick('aside','news3','新闻3')">【新闻】</a><a target="_blank" href="javascript:;" class="news_title" onclick="PTTSendClick('aside','newcontent3','新闻内容3')">真龙霸业</a></li>
+                <li><a target="_blank" href="javascript:;" onclick="PTTSendClick('aside','news3','新闻3')">【新闻】</a><a target="_blank" href="javascript:;" class="news_title" onclick="PTTSendClick('aside','newcontent3','新闻内容3')">真龙霸业</a></li>
+                <li><a target="_blank" href="javascript:;" onclick="PTTSendClick('aside','news3','新闻3')">【新闻】</a><a target="_blank" href="javascript:;" class="news_title" onclick="PTTSendClick('aside','newcontent3','新闻内容3')">真龙霸业</a></li>
+                <li><a target="_blank" href="javascript:;" onclick="PTTSendClick('aside','news3','新闻3')">【新闻】</a><a target="_blank" href="javascript:;" class="news_title" onclick="PTTSendClick('aside','newcontent3','新闻内容3')">真龙霸业</a></li>
+                <li><a target="_blank" href="javascript:;" onclick="PTTSendClick('aside','news4','新闻4')">【新闻】</a><a target="_blank" href="javascript:;" class="news_title" onclick="PTTSendClick('aside','newcontent4','新闻内容4')">真龙霸业</a></li>
+                <li><a target="_blank" href="javascript:;" onclick="PTTSendClick('aside','news5','新闻5')">【新闻】</a><a target="_blank" href="javascript:;" class="news_title" onclick="PTTSendClick('aside','newcontent5','新闻内容5')">真龙霸业</a></li>
+              </ul>
+              <ul class="news_list">
+                <li><a target="_blank" href="javascript:;" onclick="PTTSendClick('aside','news1','新闻1')">【新闻】</a><a target="_blank" href="javascript:;" class="news_title" onclick="PTTSendClick('aside','newcontent1','新闻内容1')">真龙霸业23</a></li>
+                <li><a target="_blank" href="javascript:;" onclick="PTTSendClick('aside','news1','新闻1')">【新闻】</a><a target="_blank" href="javascript:;" class="news_title" onclick="PTTSendClick('aside','newcontent1','新闻内容1')">真龙霸业23</a></li>
+                <li><a target="_blank" href="javascript:;" onclick="PTTSendClick('aside','news1','新闻1')">【新闻】</a><a target="_blank" href="javascript:;" class="news_title" onclick="PTTSendClick('aside','newcontent1','新闻内容1')">真龙霸业23</a></li>
+                <li><a target="_blank" href="javascript:;" onclick="PTTSendClick('aside','news1','新闻1')">【新闻】</a><a target="_blank" href="javascript:;" class="news_title" onclick="PTTSendClick('aside','newcontent1','新闻内容1')">真龙霸业23</a></li>
+                <li><a target="_blank" href="javascript:;" onclick="PTTSendClick('aside','news1','新闻1')">【新闻】</a><a target="_blank" href="javascript:;" class="news_title" onclick="PTTSendClick('aside','newcontent1','新闻内容1')">真龙霸业23</a></li>
+                <li><a target="_blank" href="javascript:;" onclick="PTTSendClick('aside','news2','新闻2')">【新闻】</a><a target="_blank" href="javascript:;" class="news_title" onclick="PTTSendClick('aside','newcontent2','新闻内容2')">真龙霸业</a></li>
+                <li><a target="_blank" href="javascript:;" onclick="PTTSendClick('aside','news3','新闻3')">【新闻】</a><a target="_blank" href="javascript:;" class="news_title" onclick="PTTSendClick('aside','newcontent3','新闻内容3')">真龙霸业</a></li>
+                <li><a target="_blank" href="javascript:;" onclick="PTTSendClick('aside','news4','新闻4')">【新闻】</a><a target="_blank" href="javascript:;" class="news_title" onclick="PTTSendClick('aside','newcontent4','新闻内容4')">真龙霸业</a></li>
+                <li><a target="_blank" href="javascript:;" onclick="PTTSendClick('aside','news5','新闻5')">【新闻】</a><a target="_blank" href="javascript:;" class="news_title" onclick="PTTSendClick('aside','newcontent5','新闻内容5')">真龙霸业</a></li>
+              </ul>
+          </div>
+     </div>
+   </div>
+    <div class='inif wrap_box' id='datum'>
+      <h3><span>武将介绍</span><strong>CHARACTER<i>三国群英助你逐鹿天下</i></strong></h3>
+      <ul class='inif_list'>
+        <!--<li  onclick="PTTSendClick('aside','inif_list1','刘备')" class="grayscale on inif_list_1"><img src='ossweb-img/officer/officerspr_01.jpg' alt='刘备' width='' height=''/></li>
+        <li  onclick="PTTSendClick('aside','inif_list2','甄姬')" class="grayscale inif_list_2"><img src='ossweb-img/officer/officerspr_02.jpg' alt='甄姬' width='' height=''/></li>
+        <li  onclick="PTTSendClick('aside','inif_list3','关羽')" class="grayscale inif_list_3"><img src='ossweb-img/officer/officerspr_03.jpg' alt='关羽' width='' height=''/></li>
+        <li  onclick="PTTSendClick('aside','inif_list4','吕布')" class="grayscale inif_list_4"><img src='ossweb-img/officer/officerspr_04.jpg' alt='吕布' width='' height=''/></li>
+        <li  onclick="PTTSendClick('aside','inif_list5','赵云')" class="grayscale inif_list_5"><img src='ossweb-img/officer/officerspr_05.jpg' alt='赵云' width='' height=''/></li>
+        <li  onclick="PTTSendClick('aside','inif_list6','孙尚香')" class="grayscale inif_list_6"><img src='ossweb-img/officer/officerspr_06.jpg' alt='孙尚香' width='' height=''/></li>
+        <li  onclick="PTTSendClick('aside','inif_list7','董卓')" class="grayscale inif_list_7"><img src='ossweb-img/officer/officerspr_07.jpg' alt='董卓' width='' height=''/></li>
+        <li  onclick="PTTSendClick('aside','inif_list8','貂蝉')" class="grayscale inif_list_8"><img src='ossweb-img/officer/officerspr_08.jpg' alt='貂蝉' width='' height=''/></li>
+        <li  onclick="PTTSendClick('aside','inif_list9','诸葛亮')" class="grayscale inif_list_9"><img src='ossweb-img/officer/officerspr_09.jpg' alt='诸葛亮' width='' height=''/></li>
+        <li  onclick="PTTSendClick('aside','inif_list10','黄月英')" class="grayscale inif_list_10"><img src='ossweb-img/officer/officerspr_10.jpg' alt='黄月英' width='' height=''/></li>
+        <li  onclick="PTTSendClick('aside','inif_list11','周瑜')" class="grayscale inif_list_11"><img src='ossweb-img/officer/officerspr_11.jpg' alt='周瑜' width='' height=''/></li>
+        <li  onclick="PTTSendClick('aside','inif_list12','更多武将')" class="inif_list_last"><a href="javascript:;">+<span class="po">更多精彩武将</span></a></li>-->
+      </ul>
+      <div class='inif_intr'>
+       <ul class='inif_intr_list'>
+         <!--<li id="detail_container" class="on inif_list_1 intr_li">
+          <h5>刘备<i class='spr fy'></i><em>防御</em></h5>
+          <ul class='many_data'>
+              <li class='wl'><i class='spr'></i>武力<span>123</span></li>
+              <li class='zm'><i class='spr'></i>智谋<span>234</span></li>
+              <li class='ts'><i class='spr'></i>统帅<span>312</span></li>
+          </ul>
+          <h6>武将介绍</h6>
+          <p>我就是一段很长的介绍</p>
+          <h6>武将技能</h6>
+          <ul class='skill'>
+              <li><img src='ossweb-img/skill/lb/rzwd.png'><span>仁者无敌 <i>这就是一个技能介绍 很厉害的</i></span></li>
+              <li><img src='ossweb-img/skill/lb/bz-w.png' /><span>仁者无敌 <i>这就是一个技能介绍 很厉害的</i></span></li>
+              <li><img src='ossweb-img/skill/lb/yh.png' /><span>仁者无敌 <i>这就是一个技能介绍 很厉害的</i></span></li>
+              <li><img src='ossweb-img/skill/lb/zy-w.png' /><span>仁者无敌 <i>这就是一个技能介绍 很厉害的</i></span></li>
+              <li><img src='ossweb-img/skill/lb/ryzh.png' alt=''/><span>仁者无敌 <i>这就是一个技能介绍 很厉害的</i></span></li>
+              <li><img src='ossweb-img/skill/lb/zyi-w.png' /><span>仁者无敌 <i>这就是一个技能介绍 很厉害的</i></span></li>
+          </ul>
+          <img src='ossweb-img/officer/zsbg.png' alt='刘备'/>
+         </li>-->
+
+         <!--<li class="inif_list_2 intr_li">
+          <h5>甄姬<i class='spr fy'></i><em>防御</em></h5>
+          <ul class='many_data'><li class='wl'><i class='spr'></i>武力<span>123</span></li><li class='zm'><i class='spr'></i>智谋<span>234</span></li><li class='ts'><i class='spr'></i>统帅<span>312</span></li></ul>
+          <h6>武将介绍</h6>
+          <p>我就是一段很长的介绍</p>
+          <h6>武将技能</h6>
+          <ul class='skill'><li><img src='ossweb-img/skill/lb/rzwd.png'><span>仁者无敌 <i>这就是一个技能介绍 很厉害的</i></span></li><li><img src='ossweb-img/skill/lb/bz-w.png' /><span>仁者无敌 <i>这就是一个技能介绍 很厉害的</i></span></li><li><img src='ossweb-img/skill/lb/yh.png' /><span>仁者无敌 <i>这就是一个技能介绍 很厉害的</i></span></li><li><img src='ossweb-img/skill/lb/zy-w.png' /><span>仁者无敌 <i>这就是一个技能介绍 很厉害的</i></span></li><li><img src='ossweb-img/skill/lb/ryzh.png' alt=''/><span>仁者无敌 <i>这就是一个技能介绍 很厉害的</i></span></li><li><img src='ossweb-img/skill/lb/zyi-w.png' /><span>仁者无敌 <i>这就是一个技能介绍 很厉害的</i></span></li></ul>
+          <img src='ossweb-img/officer/zsbg.png' alt='甄姬'/>
+         </li>
+
+         <li class="inif_list_3 intr_li">
+          <h5>关羽<i class='spr fy'></i><em>防御</em></h5>
+          <ul class='many_data'><li class='wl'><i class='spr'></i>武力<span>123</span></li><li class='zm'><i class='spr'></i>智谋<span>234</span></li><li class='ts'><i class='spr'></i>统帅<span>312</span></li></ul>
+          <h6>武将介绍</h6>
+          <p>我就是一段很长的介绍</p>
+          <h6>武将技能</h6>
+          <ul class='skill'><li><img src='ossweb-img/skill/lb/rzwd.png'><span>仁者无敌 <i>这就是一个技能介绍 很厉害的</i></span></li><li><img src='ossweb-img/skill/lb/bz-w.png' /><span>仁者无敌 <i>这就是一个技能介绍 很厉害的</i></span></li><li><img src='ossweb-img/skill/lb/yh.png' /><span>仁者无敌 <i>这就是一个技能介绍 很厉害的</i></span></li><li><img src='ossweb-img/skill/lb/zy-w.png' /><span>仁者无敌 <i>这就是一个技能介绍 很厉害的</i></span></li><li><img src='ossweb-img/skill/lb/ryzh.png' alt=''/><span>仁者无敌 <i>这就是一个技能介绍 很厉害的</i></span></li><li><img src='ossweb-img/skill/lb/zyi-w.png' /><span>仁者无敌 <i>这就是一个技能介绍 很厉害的</i></span></li></ul>
+          <img src='ossweb-img/officer/zsbg.png' alt='关羽'/>
+         </li>
+         <li class="inif_list_4 intr_li">
+          <h5>吕布<i class='spr fy'></i><em>防御</em></h5>
+          <ul class='many_data'><li class='wl'><i class='spr'></i>武力<span>123</span></li><li class='zm'><i class='spr'></i>智谋<span>234</span></li><li class='ts'><i class='spr'></i>统帅<span>312</span></li></ul>
+          <h6>武将介绍</h6>
+          <p>我就是一段很长的介绍</p>
+          <h6>武将技能</h6>
+          <ul class='skill'><li><img src='ossweb-img/skill/lb/rzwd.png'><span>仁者无敌 <i>这就是一个技能介绍 很厉害的</i></span></li><li><img src='ossweb-img/skill/lb/bz-w.png' /><span>仁者无敌 <i>这就是一个技能介绍 很厉害的</i></span></li><li><img src='ossweb-img/skill/lb/yh.png' /><span>仁者无敌 <i>这就是一个技能介绍 很厉害的</i></span></li><li><img src='ossweb-img/skill/lb/zy-w.png' /><span>仁者无敌 <i>这就是一个技能介绍 很厉害的</i></span></li><li><img src='ossweb-img/skill/lb/ryzh.png' alt=''/><span>仁者无敌 <i>这就是一个技能介绍 很厉害的</i></span></li><li><img src='ossweb-img/skill/lb/zyi-w.png' /><span>仁者无敌 <i>这就是一个技能介绍 很厉害的</i></span></li></ul>
+          <img src='ossweb-img/officer/zsbg.png' alt='吕布'/>
+         </li>
+         <li class="inif_list_5 intr_li">
+          <h5>赵云<i class='spr fy'></i><em>防御</em></h5>
+          <ul class='many_data'><li class='wl'><i class='spr'></i>武力<span>123</span></li><li class='zm'><i class='spr'></i>智谋<span>234</span></li><li class='ts'><i class='spr'></i>统帅<span>312</span></li></ul>
+          <h6>武将介绍</h6>
+          <p>我就是一段很长的介绍</p>
+          <h6>武将技能</h6>
+          <ul class='skill'><li><img src='ossweb-img/skill/lb/rzwd.png'><span>仁者无敌 <i>这就是一个技能介绍 很厉害的</i></span></li><li><img src='ossweb-img/skill/lb/bz-w.png' /><span>仁者无敌 <i>这就是一个技能介绍 很厉害的</i></span></li><li><img src='ossweb-img/skill/lb/yh.png' /><span>仁者无敌 <i>这就是一个技能介绍 很厉害的</i></span></li><li><img src='ossweb-img/skill/lb/zy-w.png' /><span>仁者无敌 <i>这就是一个技能介绍 很厉害的</i></span></li><li><img src='ossweb-img/skill/lb/ryzh.png' alt=''/><span>仁者无敌 <i>这就是一个技能介绍 很厉害的</i></span></li><li><img src='ossweb-img/skill/lb/zyi-w.png' /><span>仁者无敌 <i>这就是一个技能介绍 很厉害的</i></span></li></ul>
+          <img src='ossweb-img/officer/zsbg.png' alt='赵云'/>
+         </li>
+         <li class="inif_list_6 intr_li">
+          <h5>孙尚香<i class='spr fy'></i><em>防御</em></h5>
+          <ul class='many_data'><li class='wl'><i class='spr'></i>武力<span>123</span></li><li class='zm'><i class='spr'></i>智谋<span>234</span></li><li class='ts'><i class='spr'></i>统帅<span>312</span></li></ul>
+          <h6>武将介绍</h6>
+          <p>我就是一段很长的介绍</p>
+          <h6>武将技能</h6>
+          <ul class='skill'><li><img src='ossweb-img/skill/lb/rzwd.png'><span>仁者无敌 <i>这就是一个技能介绍 很厉害的</i></span></li><li><img src='ossweb-img/skill/lb/bz-w.png' /><span>仁者无敌 <i>这就是一个技能介绍 很厉害的</i></span></li><li><img src='ossweb-img/skill/lb/yh.png' /><span>仁者无敌 <i>这就是一个技能介绍 很厉害的</i></span></li><li><img src='ossweb-img/skill/lb/zy-w.png' /><span>仁者无敌 <i>这就是一个技能介绍 很厉害的</i></span></li><li><img src='ossweb-img/skill/lb/ryzh.png' alt=''/><span>仁者无敌 <i>这就是一个技能介绍 很厉害的</i></span></li><li><img src='ossweb-img/skill/lb/zyi-w.png' /><span>仁者无敌 <i>这就是一个技能介绍 很厉害的</i></span></li></ul>
+          <img src='ossweb-img/officer/zsbg.png' alt='孙尚香'/>
+         </li>
+         <li class="inif_list_7 intr_li">
+          <h5>董卓<i class='spr fy'></i><em>防御</em></h5>
+          <ul class='many_data'><li class='wl'><i class='spr'></i>武力<span>123</span></li><li class='zm'><i class='spr'></i>智谋<span>234</span></li><li class='ts'><i class='spr'></i>统帅<span>312</span></li></ul>
+          <h6>武将介绍</h6>
+          <p>我就是一段很长的介绍</p>
+          <h6>武将技能</h6>
+          <ul class='skill'><li><img src='ossweb-img/skill/lb/rzwd.png'><span>仁者无敌 <i>这就是一个技能介绍 很厉害的</i></span></li><li><img src='ossweb-img/skill/lb/bz-w.png' /><span>仁者无敌 <i>这就是一个技能介绍 很厉害的</i></span></li><li><img src='ossweb-img/skill/lb/yh.png' /><span>仁者无敌 <i>这就是一个技能介绍 很厉害的</i></span></li><li><img src='ossweb-img/skill/lb/zy-w.png' /><span>仁者无敌 <i>这就是一个技能介绍 很厉害的</i></span></li><li><img src='ossweb-img/skill/lb/ryzh.png' alt=''/><span>仁者无敌 <i>这就是一个技能介绍 很厉害的</i></span></li><li><img src='ossweb-img/skill/lb/zyi-w.png' /><span>仁者无敌 <i>这就是一个技能介绍 很厉害的</i></span></li></ul>
+          <img src='ossweb-img/officer/zsbg.png' alt='董卓'/>
+         </li>
+         <li class="inif_list_8 intr_li">
+          <h5>貂蝉<i class='spr fy'></i><em>防御</em></h5>
+          <ul class='many_data'><li class='wl'><i class='spr'></i>武力<span>123</span></li><li class='zm'><i class='spr'></i>智谋<span>234</span></li><li class='ts'><i class='spr'></i>统帅<span>312</span></li></ul>
+          <h6>武将介绍</h6>
+          <p>我就是一段很长的介绍</p>
+          <h6>武将技能</h6>
+          <ul class='skill'><li><img src='ossweb-img/skill/lb/rzwd.png'><span>仁者无敌 <i>这就是一个技能介绍 很厉害的</i></span></li><li><img src='ossweb-img/skill/lb/bz-w.png' /><span>仁者无敌 <i>这就是一个技能介绍 很厉害的</i></span></li><li><img src='ossweb-img/skill/lb/yh.png' /><span>仁者无敌 <i>这就是一个技能介绍 很厉害的</i></span></li><li><img src='ossweb-img/skill/lb/zy-w.png' /><span>仁者无敌 <i>这就是一个技能介绍 很厉害的</i></span></li><li><img src='ossweb-img/skill/lb/ryzh.png' alt=''/><span>仁者无敌 <i>这就是一个技能介绍 很厉害的</i></span></li><li><img src='ossweb-img/skill/lb/zyi-w.png' /><span>仁者无敌 <i>这就是一个技能介绍 很厉害的</i></span></li></ul>
+          <img src='ossweb-img/officer/zsbg.png' alt='貂蝉'/>
+         </li>
+         <li class="inif_list_9 intr_li">
+          <h5>诸葛亮<i class='spr fy'></i><em>防御</em></h5>
+          <ul class='many_data'><li class='wl'><i class='spr'></i>武力<span>123</span></li><li class='zm'><i class='spr'></i>智谋<span>234</span></li><li class='ts'><i class='spr'></i>统帅<span>312</span></li></ul>
+          <h6>武将介绍</h6>
+          <p>我就是一段很长的介绍</p>
+          <h6>武将技能</h6>
+          <ul class='skill'><li><img src='ossweb-img/skill/lb/rzwd.png'><span>仁者无敌 <i>这就是一个技能介绍 很厉害的</i></span></li><li><img src='ossweb-img/skill/lb/bz-w.png' /><span>仁者无敌 <i>这就是一个技能介绍 很厉害的</i></span></li><li><img src='ossweb-img/skill/lb/yh.png' /><span>仁者无敌 <i>这就是一个技能介绍 很厉害的</i></span></li><li><img src='ossweb-img/skill/lb/zy-w.png' /><span>仁者无敌 <i>这就是一个技能介绍 很厉害的</i></span></li><li><img src='ossweb-img/skill/lb/ryzh.png' alt=''/><span>仁者无敌 <i>这就是一个技能介绍 很厉害的</i></span></li><li><img src='ossweb-img/skill/lb/zyi-w.png' /><span>仁者无敌 <i>这就是一个技能介绍 很厉害的</i></span></li></ul>
+          <img src='ossweb-img/officer/zsbg.png' alt='诸葛亮'/>
+         </li>
+         <li class="inif_list_10 intr_li">
+          <h5>黄月英<i class='spr fy'></i><em>防御</em></h5>
+          <ul class='many_data'><li class='wl'><i class='spr'></i>武力<span>123</span></li><li class='zm'><i class='spr'></i>智谋<span>234</span></li><li class='ts'><i class='spr'></i>统帅<span>312</span></li></ul>
+          <h6>武将介绍</h6>
+          <p>我就是一段很长的介绍</p>
+          <h6>武将技能</h6>
+          <ul class='skill'><li><img src='ossweb-img/skill/lb/rzwd.png'><span>仁者无敌 <i>这就是一个技能介绍 很厉害的</i></span></li><li><img src='ossweb-img/skill/lb/bz-w.png' /><span>仁者无敌 <i>这就是一个技能介绍 很厉害的</i></span></li><li><img src='ossweb-img/skill/lb/yh.png' /><span>仁者无敌 <i>这就是一个技能介绍 很厉害的</i></span></li><li><img src='ossweb-img/skill/lb/zy-w.png' /><span>仁者无敌 <i>这就是一个技能介绍 很厉害的</i></span></li><li><img src='ossweb-img/skill/lb/ryzh.png' alt=''/><span>仁者无敌 <i>这就是一个技能介绍 很厉害的</i></span></li><li><img src='ossweb-img/skill/lb/zyi-w.png' /><span>仁者无敌 <i>这就是一个技能介绍 很厉害的</i></span></li></ul>
+          <img src='ossweb-img/officer/zsbg.png' alt='黄月英'/>
+         </li>
+         <li class="inif_list_11 intr_li">
+          <h5>周瑜<i class='spr fy'></i><em>防御</em></h5>
+          <ul class='many_data'><li class='wl'><i class='spr'></i>武力<span>123</span></li><li class='zm'><i class='spr'></i>智谋<span>234</span></li><li class='ts'><i class='spr'></i>统帅<span>312</span></li></ul>
+          <h6>武将介绍</h6>
+          <p>我就是一段很长的介绍</p>
+          <h6>武将技能</h6>
+          <ul class='skill'><li><img src='ossweb-img/skill/lb/rzwd.png'><span>仁者无敌 <i>这就是一个技能介绍 很厉害的</i></span></li><li><img src='ossweb-img/skill/lb/bz-w.png' /><span>仁者无敌 <i>这就是一个技能介绍 很厉害的</i></span></li><li><img src='ossweb-img/skill/lb/yh.png' /><span>仁者无敌 <i>这就是一个技能介绍 很厉害的</i></span></li><li><img src='ossweb-img/skill/lb/zy-w.png' /><span>仁者无敌 <i>这就是一个技能介绍 很厉害的</i></span></li><li><img src='ossweb-img/skill/lb/ryzh.png' alt=''/><span>仁者无敌 <i>这就是一个技能介绍 很厉害的</i></span></li><li><img src='ossweb-img/skill/lb/zyi-w.png' /><span>仁者无敌 <i>这就是一个技能介绍 很厉害的</i></span></li></ul>
+          <img src='ossweb-img/officer/zsbg.png' alt='周瑜'/>
+         </li>-->
+       </ul>
+      </div>
+    </div>
+    <div class='officer_feature wrap_box q' id='officer_feature'>
+      <h3><span>游戏特色</span><strong>GAME FEATURES<i>与众不同的玩法</i></strong></h3>
+        <p class='z_left spr'></p>
+        <div class='officer_roll swiper-container'>
+        <ul class='swiper-wrapper'>
+          <li class='swiper-slide'><img src='ossweb-img/01.jpg' alt='轮播图' width='1169' height="440" /></li>
+          <li class='swiper-slide'><img src='ossweb-img/02.jpg' alt='轮播图' width='1169' height="440" /></li>
+          <li class='swiper-slide'><img src='ossweb-img/03.jpg' alt='轮播图' width='1169' height="440" /></li>
+          <li class='swiper-slide'><img src='ossweb-img/04.jpg' alt='轮播图' width='1169' height="440" /></li>
+          <li class='swiper-slide'><img src='ossweb-img/05.jpg' alt='轮播图' width='1169' height="440" /></li>
+        </ul>
+        <ol class='roll_page'>
+        </ol>
+      </div>
+        <p class='z_right spr'></p>
+    </div>
+    <div class='introduction wrap_box q'>
+      <h3><span>兵种介绍</span><strong>CORPS<i>最多形态的兵种进化</i></strong></h3>
+      <ul class='sum_list'>
+        <li class='on'>步兵 <a href="soldierlist.html?id=0" onclick="PTTSendClick('sum_list','more1','步兵');">+</a></li>
+        <li>骑兵 <a  href="soldierlist.html?id=1" onclick="PTTSendClick('sum_list','more2','骑兵');">+</a></li>
+        <li>弓兵 <a href="soldierlist.html?id=2" onclick="PTTSendClick('sum_list','more3','弓兵');">+</a></li>
+        <li>车兵 <a href="soldierlist.html?id=3" onclick="PTTSendClick('sum_list','more4','车兵');">+</a></li>
+      </ul>
+      <ul class='intr_box'>
+       <!--<li class='intr_child on infantry'>
+         <ul class='infantry_box widt_box'>
+          <li class='pos_obx on infantry_one'>
+           <h4>轻甲步兵1</h4>
+           <p>这里是步兵总概括介绍内容，这里是步兵总概括介绍内容</p>
+           <img src='ossweb-img/introduction/bzbg.png' alt='士兵图'/>
+           <ul>
+            <li><img src='ossweb-img/skill/lb/zyi-w.png' /><span>仁者无敌 <i>这就是一个技能介绍 很厉害的</i></span></li>
+            <li><img src='ossweb-img/skill/lb/zyi-w.png' /><span>仁者无敌 <i>这就是一个技能介绍 很厉害的</i></span></li>
+           </ul>
+          </li>
+         </ul>
+         <ul class='aux_list'>
+           <li class='spr on'>轻甲步兵</li>
+           <li class='spr'>轻甲步兵</li>
+           <li class='spr'>轻甲步兵</li>
+           <li class='spr'>轻甲步兵</li>
+           <li class='spr'>轻甲步兵</li>
+         </ul>
+       </li>-->
+       <!--<li class='intr_child cavalry'>
+         <ul class='cavalry_box widt_box'>
+          <li class='pos_obx cavalry_one'>
+           <h4>轻甲步兵2</h4>
+           <p>这里是步兵总概括介绍内容，这里是步兵总概括介绍内容</p>
+           <img src='ossweb-img/introduction/bzbg.png' alt='士兵图'/>
+           <ul>
+            <li><img src='ossweb-img/skill/lb/zyi-w.png' /><span>仁者无敌 <i>这就是一个技能介绍 很厉害的</i></span></li>
+            <li><img src='ossweb-img/skill/lb/zyi-w.png' /><span>仁者无敌 <i>这就是一个技能介绍 很厉害的</i></span></li>
+           </ul>
+          </li>
+          <li class='pos_obx cavalry_two'>
+           <h4>轻甲步兵23</h4>
+           <p>这里是步兵总概括介绍内容，这里是步兵总概括介绍内容</p>
+           <img src='ossweb-img/introduction/bzbg.png' alt='士兵图'/>
+           <ul>
+            <li><img src='ossweb-img/skill/lb/zyi-w.png' /><span>仁者无敌 <i>这就是一个技能介绍 很厉害的</i></span></li>
+            <li><img src='ossweb-img/skill/lb/zyi-w.png' /><span>仁者无敌 <i>这就是一个技能介绍 很厉害的</i></span></li>
+           </ul>
+          </li>
+          <li class='pos_obx cavalry_three'>
+           <h4>轻甲步兵21</h4>
+           <p>这里是步兵总概括介绍内容，这里是步兵总概括介绍内容</p>
+           <img src='ossweb-img/introduction/bzbg.png' alt='士兵图'/>
+           <ul>
+            <li><img src='ossweb-img/skill/lb/zyi-w.png' /><span>仁者无敌 <i>这就是一个技能介绍 很厉害的</i></span></li>
+            <li><img src='ossweb-img/skill/lb/zyi-w.png' /><span>仁者无敌 <i>这就是一个技能介绍 很厉害的</i></span></li>
+           </ul>
+          </li>
+          <li class='pos_obx cavalry_four'>
+           <h4>轻甲步兵24</h4>
+           <p>这里是步兵总概括介绍内容，这里是步兵总概括介绍内容</p>
+           <img src='ossweb-img/introduction/bzbg.png' alt='士兵图'/>
+           <ul>
+            <li><img src='ossweb-img/skill/lb/zyi-w.png' /><span>仁者无敌 <i>这就是一个技能介绍 很厉害的</i></span></li>
+            <li><img src='ossweb-img/skill/lb/zyi-w.png' /><span>仁者无敌 <i>这就是一个技能介绍 很厉害的</i></span></li>
+           </ul>
+          </li>
+          <li class='pos_obx cavalry_five'>
+           <h4>轻甲步兵26</h4>
+           <p>这里是步兵总概括介绍内容，这里是步兵总概括介绍内容</p>
+           <img src='ossweb-img/introduction/bzbg.png' alt='士兵图'/>
+           <ul>
+            <li><img src='ossweb-img/skill/lb/zyi-w.png' /><span>仁者无敌 <i>这就是一个技能介绍 很厉害的</i></span></li>
+            <li><img src='ossweb-img/skill/lb/zyi-w.png' /><span>仁者无敌 <i>这就是一个技能介绍 很厉害的</i></span></li>
+           </ul>
+          </li>
+         </ul>
+         <ul class='aux_list'>
+           <li class='spr on'>轻甲步兵</li>
+           <li class='spr'>轻甲步兵</li>
+           <li class='spr'>轻甲步兵</li>
+           <li class='spr'>轻甲步兵</li>
+           <li class='spr'>轻甲步兵</li>
+         </ul>
+       </li>
+       <li class='intr_child archer'>
+         <ul class='archer_box widt_box'>
+          <li class='pos_obx archer_one'>
+           <h4>轻甲步兵3</h4>
+           <p>这里是步兵总概括介绍内容，这里是步兵总概括介绍内容</p>
+           <img src='ossweb-img/introduction/bzbg.png' alt='士兵图'/>
+           <ul>
+            <li><img src='ossweb-img/skill/lb/zyi-w.png' /><span>仁者无敌 <i>这就是一个技能介绍 很厉害的</i></span></li>
+            <li><img src='ossweb-img/skill/lb/zyi-w.png' /><span>仁者无敌 <i>这就是一个技能介绍 很厉害的</i></span></li>
+           </ul>
+          </li>
+          <li class='pos_obx archer_two'>
+           <h4>轻甲步兵31</h4>
+           <p>这里是步兵总概括介绍内容，这里是步兵总概括介绍内容</p>
+           <img src='ossweb-img/introduction/bzbg.png' alt='士兵图'/>
+           <ul>
+            <li><img src='ossweb-img/skill/lb/zyi-w.png' /><span>仁者无敌 <i>这就是一个技能介绍 很厉害的</i></span></li>
+            <li><img src='ossweb-img/skill/lb/zyi-w.png' /><span>仁者无敌 <i>这就是一个技能介绍 很厉害的</i></span></li>
+           </ul>
+          </li>
+          <li class='pos_obx archer_three'>
+           <h4>轻甲步兵32</h4>
+           <p>这里是步兵总概括介绍内容，这里是步兵总概括介绍内容</p>
+           <img src='ossweb-img/introduction/bzbg.png' alt='士兵图'/>
+           <ul>
+            <li><img src='ossweb-img/skill/lb/zyi-w.png' /><span>仁者无敌 <i>这就是一个技能介绍 很厉害的</i></span></li>
+            <li><img src='ossweb-img/skill/lb/zyi-w.png' /><span>仁者无敌 <i>这就是一个技能介绍 很厉害的</i></span></li>
+           </ul>
+          </li>
+          <li class='pos_obx archer_four'>
+           <h4>轻甲步兵33</h4>
+           <p>这里是步兵总概括介绍内容，这里是步兵总概括介绍内容</p>
+           <img src='ossweb-img/introduction/bzbg.png' alt='士兵图'/>
+           <ul>
+            <li><img src='ossweb-img/skill/lb/zyi-w.png' /><span>仁者无敌 <i>这就是一个技能介绍 很厉害的</i></span></li>
+            <li><img src='ossweb-img/skill/lb/zyi-w.png' /><span>仁者无敌 <i>这就是一个技能介绍 很厉害的</i></span></li>
+           </ul>
+          </li>
+          <li class='pos_obx archer_five'>
+           <h4>轻甲步兵34</h4>
+           <p>这里是步兵总概括介绍内容，这里是步兵总概括介绍内容</p>
+           <img src='ossweb-img/introduction/bzbg.png' alt='士兵图'/>
+           <ul>
+            <li><img src='ossweb-img/skill/lb/zyi-w.png' /><span>仁者无敌 <i>这就是一个技能介绍 很厉害的</i></span></li>
+            <li><img src='ossweb-img/skill/lb/zyi-w.png' /><span>仁者无敌 <i>这就是一个技能介绍 很厉害的</i></span></li>
+           </ul>
+          </li>
+         </ul>
+         <ul class='aux_list'>
+           <li class='spr on'>轻甲步兵</li>
+           <li class='spr'>轻甲步兵</li>
+           <li class='spr'>轻甲步兵</li>
+           <li class='spr'>轻甲步兵</li>
+           <li class='spr'>轻甲步兵</li>
+         </ul>
+       </li>
+       <li class='intr_child chariotsoldier'>
+         <ul class='chariotsoldier_box widt_box'>
+          <li class='pos_obx chariotsoldier_one'>
+           <h4>轻甲步兵4</h4>
+           <p>这里是步兵总概括介绍内容，这里是步兵总概括介绍内容</p>
+           <img src='ossweb-img/introduction/bzbg.png' alt='士兵图'/>
+           <ul>
+            <li><img src='ossweb-img/skill/lb/zyi-w.png' /><span>仁者无敌 <i>这就是一个技能介绍 很厉害的</i></span></li>
+            <li><img src='ossweb-img/skill/lb/zyi-w.png' /><span>仁者无敌 <i>这就是一个技能介绍 很厉害的</i></span></li>
+           </ul>
+          </li>
+          <li class='pos_obx chariotsoldier_two'>
+           <h4>轻甲步兵41</h4>
+           <p>这里是步兵总概括介绍内容，这里是步兵总概括介绍内容</p>
+           <img src='ossweb-img/introduction/bzbg.png' alt='士兵图'/>
+           <ul>
+            <li><img src='ossweb-img/skill/lb/zyi-w.png' /><span>仁者无敌 <i>这就是一个技能介绍 很厉害的</i></span></li>
+            <li><img src='ossweb-img/skill/lb/zyi-w.png' /><span>仁者无敌 <i>这就是一个技能介绍 很厉害的</i></span></li>
+           </ul>
+          </li>
+          <li class='pos_obx chariotsoldier_three'>
+           <h4>轻甲步兵42</h4>
+           <p>这里是步兵总概括介绍内容，这里是步兵总概括介绍内容</p>
+           <img src='ossweb-img/introduction/bzbg.png' alt='士兵图'/>
+           <ul>
+            <li><img src='ossweb-img/skill/lb/zyi-w.png' /><span>仁者无敌 <i>这就是一个技能介绍 很厉害的</i></span></li>
+            <li><img src='ossweb-img/skill/lb/zyi-w.png' /><span>仁者无敌 <i>这就是一个技能介绍 很厉害的</i></span></li>
+           </ul>
+          </li>
+          <li class='pos_obx chariotsoldier_four'>
+           <h4>轻甲步兵43</h4>
+           <p>这里是步兵总概括介绍内容，这里是步兵总概括介绍内容</p>
+           <img src='ossweb-img/introduction/bzbg.png' alt='士兵图'/>
+           <ul>
+            <li><img src='ossweb-img/skill/lb/zyi-w.png' /><span>仁者无敌 <i>这就是一个技能介绍 很厉害的</i></span></li>
+            <li><img src='ossweb-img/skill/lb/zyi-w.png' /><span>仁者无敌 <i>这就是一个技能介绍 很厉害的</i></span></li>
+           </ul>
+          </li>
+          <li class='pos_obx chariotsoldier_five'>
+           <h4>轻甲步兵44</h4>
+           <p>这里是步兵总概括介绍内容，这里是步兵总概括介绍内容</p>
+           <img src='ossweb-img/introduction/bzbg.png' alt='士兵图'/>
+           <ul>
+            <li><img src='ossweb-img/skill/lb/zyi-w.png' /><span>仁者无敌 <i>这就是一个技能介绍 很厉害的</i></span></li>
+            <li><img src='ossweb-img/skill/lb/zyi-w.png' /><span>仁者无敌 <i>这就是一个技能介绍 很厉害的</i></span></li>
+           </ul>
+          </li>
+         </ul>
+         <ul class='aux_list'>
+           <li class='spr on'>轻甲步兵</li>
+           <li class='spr'>轻甲步兵</li>
+           <li class='spr'>轻甲步兵</li>
+           <li class='spr'>轻甲步兵</li>
+           <li class='spr'>轻甲步兵</li>
+         </ul>
+       </li>-->
+      </ul>
+    </div>
+    <div class='strategy wrap_box q' id='strategy_box'>
+      <div class="strategy_content">
+       <h3><span>攻略秘籍</span><strong>RAIDERS CHEATS<i>最齐全的成长宝典</i></strong></h3>
+       <ul class='strategynav'>
+         <li class='on'>最新</li>
+         <li>新手</li>
+         <li>发展</li>
+         <li>武将</li>
+         <li>其他</li>
+       </ul>
+       <a href="strategy.html" class='more' onclick="PTTSendClick('strategy','more','更多');">更多<i class='spr'>+</i></a>
+       <img src="ossweb-img/strategy.jpg" width="529" height="273" alt="新手成长攻略" class='newsstrategy'>
+       <a href='javascript:;' class='sign' onclick="PTTSendClick('strategy','mes1','攻略1');">同人攻略标题同人攻略标题</a>
+       <ul class='strategy_list on'>
+         <li><a href='strategy.html' target="_blank">[玩法]</a><a href='strategydetail.html' target="_blank">同人攻略标题同人攻略标题1</a><i>12/21</i></li>
+         <li><a href='strategy.html' target="_blank">[玩法]</a><a href='strategydetail.html' target="_blank">同人攻略标题同人攻略标题1</a><i>12/21</i></li>
+         <li><a href='strategy.html' target="_blank">[玩法]</a><a href='strategydetail.html' target="_blank">同人攻略标题同人攻略标题1</a><i>12/21</i></li>
+         <li><a href='strategy.html' target="_blank">[玩法]</a><a href='strategydetail.html' target="_blank">同人攻略标题同人攻略标题1</a><i>12/21</i></li>
+         <li><a href='strategy.html' target="_blank">[玩法]</a><a href='strategydetail.html' target="_blank">同人攻略标题同人攻略标题1</a><i>12/21</i></li>
+         <li><a href='strategy.html' target="_blank">[玩法]</a><a href='strategydetail.html' target="_blank">同人攻略标题同人攻略标题1</a><i>12/21</i></li>
+       </ul>
+       <ul class='strategy_list'>
+         <li><a href='javascript:;'>[玩法]</a><a href='javascript:;'>同人攻略标题同人攻略标题2</a><i>12/21</i></li>
+         <li><a href='javascript:;'>[玩法]</a><a href='javascript:;'>同人攻略标题同人攻略标题</a><i>12/21</i></li>
+         <li><a href='javascript:;'>[玩法]</a><a href='javascript:;'>同人攻略标题同人攻略标题</a><i>12/21</i></li>
+         <li><a href='javascript:;'>[玩法]</a><a href='javascript:;'>同人攻略标题同人攻略标题</a><i>12/21</i></li>
+         <li><a href='javascript:;'>[玩法]</a><a href='javascript:;'>同人攻略标题同人攻略标题</a><i>12/21</i></li>
+         <li><a href='javascript:;'>[玩法]</a><a href='javascript:;'>同人攻略标题同人攻略标题</a><i>12/21</i></li>
+       </ul>
+       <ul class='strategy_list'>
+         <li><a href='javascript:;'>[玩法]</a><a href='javascript:;'>同人攻略标题同人攻略标题3</a><i>12/21</i></li>
+         <li><a href='javascript:;'>[玩法]</a><a href='javascript:;'>同人攻略标题同人攻略标题</a><i>12/21</i></li>
+         <li><a href='javascript:;'>[玩法]</a><a href='javascript:;'>同人攻略标题同人攻略标题</a><i>12/21</i></li>
+         <li><a href='javascript:;'>[玩法]</a><a href='javascript:;'>同人攻略标题同人攻略标题</a><i>12/21</i></li>
+         <li><a href='javascript:;'>[玩法]</a><a href='javascript:;'>同人攻略标题同人攻略标题</a><i>12/21</i></li>
+         <li><a href='javascript:;'>[玩法]</a><a href='javascript:;'>同人攻略标题同人攻略标题</a><i>12/21</i></li>
+       </ul>
+       <ul class='strategy_list'>
+         <li><a href='javascript:;'>[玩法]</a><a href='javascript:;'>同人攻略标题同人攻略标题4</a><i>12/21</i></li>
+         <li><a href='javascript:;'>[玩法]</a><a href='javascript:;'>同人攻略标题同人攻略标题</a><i>12/21</i></li>
+         <li><a href='javascript:;'>[玩法]</a><a href='javascript:;'>同人攻略标题同人攻略标题</a><i>12/21</i></li>
+         <li><a href='javascript:;'>[玩法]</a><a href='javascript:;'>同人攻略标题同人攻略标题</a><i>12/21</i></li>
+         <li><a href='javascript:;'>[玩法]</a><a href='javascript:;'>同人攻略标题同人攻略标题</a><i>12/21</i></li>
+         <li><a href='javascript:;'>[玩法]</a><a href='javascript:;'>同人攻略标题同人攻略标题</a><i>12/21</i></li>
+       </ul>
+       <ul class='strategy_list'>
+         <li><a href='javascript:;'>[玩法]</a><a href='javascript:;'>同人攻略标题同人攻略标题</a><i>12/21</i></li>
+         <li><a href='javascript:;'>[玩法]</a><a href='javascript:;'>同人攻略标题同人攻略标题</a><i>12/21</i></li>
+         <li><a href='javascript:;'>[玩法]</a><a href='javascript:;'>同人攻略标题同人攻略标题</a><i>12/21</i></li>
+         <li><a href='javascript:;'>[玩法]</a><a href='javascript:;'>同人攻略标题同人攻略标题</a><i>12/21</i></li>
+         <li><a href='javascript:;'>[玩法]</a><a href='javascript:;'>同人攻略标题同人攻略标题</a><i>12/21</i></li>
+         <li><a href='javascript:;'>[玩法]</a><a href='javascript:;'>同人攻略标题同人攻略标题</a><i>12/21</i></li>
+       </ul>
+      </div>
+      <div class='side'>
+        <h3>精彩视频</h3>
+        <a href="videolist.html" class='more' onclick="PTTSendClick('main','more','更多视频');">更多<i class='spr'>+</i></a>
+        <ul>
+          <li class=''>
+            <i class='spr'>官方</i>
+            <a href="javascript:;" onclick="PTTSendClick('side','more1','官方');">
+              <img src="ossweb-img/video2.jpg" alt="">
+            </a>
+          </li>
+          <li class='two'>
+            <i class='spr'>攻略</i>
+            <a href="javascript:;" onclick="PTTSendClick('side','more2','攻略');">
+              <img src="ossweb-img/video3.jpg" alt="">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class='share wrap_box q' id='share_box'>
+      <div class='share_content'>
+       <h3><span>同人内容</span><strong>GAME FEATURES<i>最丰富的同人作品</i></strong></h3>
+       <ul class='strategynav'>
+         <li class='on'>最新</li>
+         <li>美 文</li>
+         <li>小 说</li>
+         <li>漫  画</li>
+         <li>手  绘</li>
+       </ul>
+       <a href="colleagues.html" class='more' onclick="PTTSendClick('share_box','more','更多');">更多<i class='spr'>+</i></a>
+       <a class='share_sign' href='javascript:;'><img src="ossweb-img/share1.jpg" alt="新手成长攻略" width="214" height='273'></a>
+       <a href='javascript:;' class='sign'>同人攻略标题同人攻略标题</a>
+       <ul class='share_list on'>
+         <li><a href='colleagues.html' target="_blank">[玩法]</a><a href='fictiondetail.html' target="_blank">同人攻略标题同人攻略标题</a><i>12/21</i></li>
+         <li><a href='colleagues.html' target="_blank">[玩法]</a><a href='fictiondetail.html' target="_blank">同人攻略标题同人攻略标题</a><i>12/21</i></li>
+         <li><a href='colleagues.html' target="_blank">[玩法]</a><a href='fictiondetail.html' target="_blank">同人攻略标题同人攻略标题</a><i>12/21</i></li>
+         <li><a href='colleagues.html' target="_blank">[玩法]</a><a href='fictiondetail.html' target="_blank">同人攻略标题同人攻略标题</a><i>12/21</i></li>
+         <li><a href='colleagues.html' target="_blank">[玩法]</a><a href='fictiondetail.html' target="_blank">同人攻略标题同人攻略标题</a><i>12/21</i></li>
+         <li><a href='colleagues.html' target="_blank">[玩法]</a><a href='fictiondetail.html' target="_blank">同人攻略标题同人攻略标题</a><i>12/21</i></li>
+         <li><a href='colleagues.html' target="_blank">[玩法]</a><a href='fictiondetail.html' target="_blank">同人攻略标题同人攻略标题</a><i>12/21</i></li>
+       </ul>
+       <ul class='share_list'>
+         <li><a href='javascript:;'>[玩法3]</a><a href='javascript:;'>同人攻略标题同人攻略标题</a><i>12/21</i></li>
+         <li><a href='javascript:;'>[玩法4]</a><a href='javascript:;'>同人攻略标题同人攻略标题</a><i>12/21</i></li>
+         <li><a href='javascript:;'>[玩法]</a><a href='javascript:;'>同人攻略标题同人攻略标题</a><i>12/21</i></li>
+         <li><a href='javascript:;'>[玩法]</a><a href='javascript:;'>同人攻略标题同人攻略标题</a><i>12/21</i></li>
+         <li><a href='javascript:;'>[玩法]</a><a href='javascript:;'>同人攻略标题同人攻略标题</a><i>12/21</i></li>
+         <li><a href='javascript:;'>[玩法]</a><a href='javascript:;'>同人攻略标题同人攻略标题</a><i>12/21</i></li>
+         <li><a href='javascript:;'>[玩法]</a><a href='javascript:;'>同人攻略标题同人攻略标题</a><i>12/21</i></li>
+       </ul>
+       <ul class='share_list'>
+         <li><a href='javascript:;'>[玩法5]</a><a href='javascript:;'>同人攻略标题同人攻略标题</a><i>12/21</i></li>
+         <li><a href='javascript:;'>[玩法6]</a><a href='javascript:;'>同人攻略标题同人攻略标题</a><i>12/21</i></li>
+         <li><a href='javascript:;'>[玩法]</a><a href='javascript:;'>同人攻略标题同人攻略标题</a><i>12/21</i></li>
+         <li><a href='javascript:;'>[玩法]</a><a href='javascript:;'>同人攻略标题同人攻略标题</a><i>12/21</i></li>
+         <li><a href='javascript:;'>[玩法]</a><a href='javascript:;'>同人攻略标题同人攻略标题</a><i>12/21</i></li>
+         <li><a href='javascript:;'>[玩法]</a><a href='javascript:;'>同人攻略标题同人攻略标题</a><i>12/21</i></li>
+         <li><a href='javascript:;'>[玩法]</a><a href='javascript:;'>同人攻略标题同人攻略标题</a><i>12/21</i></li>
+       </ul>
+       <ul class='share_list'>
+         <li><a href='javascript:;'>[玩法7]</a><a href='javascript:;'>同人攻略标题同人攻略标题</a><i>12/21</i></li>
+         <li><a href='javascript:;'>[玩法8]</a><a href='javascript:;'>同人攻略标题同人攻略标题</a><i>12/21</i></li>
+         <li><a href='javascript:;'>[玩法]</a><a href='javascript:;'>同人攻略标题同人攻略标题</a><i>12/21</i></li>
+         <li><a href='javascript:;'>[玩法]</a><a href='javascript:;'>同人攻略标题同人攻略标题</a><i>12/21</i></li>
+         <li><a href='javascript:;'>[玩法]</a><a href='javascript:;'>同人攻略标题同人攻略标题</a><i>12/21</i></li>
+         <li><a href='javascript:;'>[玩法]</a><a href='javascript:;'>同人攻略标题同人攻略标题</a><i>12/21</i></li>
+         <li><a href='javascript:;'>[玩法]</a><a href='javascript:;'>同人攻略标题同人攻略标题</a><i>12/21</i></li>
+       </ul>
+       <ul class='share_list'>
+         <li><a href='javascript:;'>[玩法9]</a><a href='javascript:;'>同人攻略标题同人攻略标题</a><i>12/21</i></li>
+         <li><a href='javascript:;'>[玩法0]</a><a href='javascript:;'>同人攻略标题同人攻略标题</a><i>12/21</i></li>
+         <li><a href='javascript:;'>[玩法]</a><a href='javascript:;'>同人攻略标题同人攻略标题</a><i>12/21</i></li>
+         <li><a href='javascript:;'>[玩法]</a><a href='javascript:;'>同人攻略标题同人攻略标题</a><i>12/21</i></li>
+         <li><a href='javascript:;'>[玩法]</a><a href='javascript:;'>同人攻略标题同人攻略标题</a><i>12/21</i></li>
+         <li><a href='javascript:;'>[玩法]</a><a href='javascript:;'>同人攻略标题同人攻略标题</a><i>12/21</i></li>
+         <li><a href='javascript:;'>[玩法]</a><a href='javascript:;'>同人攻略标题同人攻略标题</a><i>12/21</i></li>
+       </ul>
+       <ul class='show_list'>
+         <li><a href="strategydetail.html" target="_blank"><img src="ossweb-img/share2.jpg" alt=""><span>同人攻略标题同人攻略标题</span></a></li>
+         <li><a href="strategydetail.html" target="_blank"><img src="ossweb-img/share3.jpg" alt=""><span>同人攻略标题同人攻略标题</span></a></li>
+       </ul>
+      </div>
+      <div class='side'>
+        <h3>官方原画</h3>
+        <a href="colleagues.html" class='more' onclick="PTTSendClick('side','more1','更多原画');">更多<i class='spr'>+</i></a>
+        <ul>
+          <li>
+            <i></i>
+            <a href="fictiondetail.html" target="_blank">
+              <img src="ossweb-img/share2.jpg" alt="">
+              <span>同人攻略标题同人攻略标题</span>
+            </a>
+          </li>
+          <li>
+            <i></i>
+            <a href="fictiondetail.html" target="_blank">
+              <img src="ossweb-img/share3.jpg" alt="">
+              <span>同人攻略标题同人攻略标题</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class='video wrap_box q' id='video_box'>
+      <h3><span>主播专区</span><strong>Charismatic anchors<i>魅力与实力同台出演</i></strong><u></u></h3>
+      <a href="//egame.qq.com/" class="egame sp" target=_blank onclick="PTTSendClick('video','egame','企鹅电竞');">企鹅电竞</a>
+      <a href="anchor.html" class='more' onclick="PTTSendClick('strategy','more1','更多');">更多<i class='spr'>+</i></a>
+      <div id='video'></div>
+      <ul class='videoside'>
+        <li class='on'><a href='javascript:play("t0517mij1bc",true);' onclick="PTTSendClick('videoside','video1','视频1');"><img src='ossweb-img/videolist1.jpg' alt='' width='' height='' /><p>这就是一个很长的标题吧?就是吧? 可以!</p><span><i class='spr'></i>播放1002次</span></a></li>
+        <li><a href='javascript:play("y0510hvu0a7",true);' onclick="PTTSendClick('videoside','video2','视频2');"><img src='ossweb-img/videolist1.jpg' alt='' width='' height='' /><p>这就是一个很长的标题吧?就是吧? 可以!</p><span><i class='spr'></i>播放1002次</span></a></li>
+        <li><a href='javascript:play("t0517mij1bc",true);' onclick="PTTSendClick('videoside','video3','视频3');"><img src='ossweb-img/videolist1.jpg' alt='' width='' height='' /><p>这就是一个很长的标题吧?就是吧? 可以!</p><span><i class='spr'></i>播放1002次</span></a></li>
+        <li><a href='javascript:play("y0510hvu0a7",true);' onclick="PTTSendClick('videoside','video4','视频4');"><img src='ossweb-img/videolist1.jpg' alt='' width='' height='' /><p>这就是一个很长的标题吧?就是吧? 可以!</p><span><i class='spr'></i>播放1002次</span></a></li>
+      </ul>
+    </div>
+    <p class='motto wrap_box'>这场战争，远不止输赢</p>
+    <ul class='qr_box wrap_box q'>
+      <li class='qr_zc'><img class='po' src='ossweb-img/qr/wx_qr.jpg' alt='微信二维码' /> <p class=''><i class='spr'></i><span class='po'>微信公众号</span></p></li>
+      <li class='qr_zc'><img class='po' src='ossweb-img/qr/bl_qr.jpg' alt='部落二维码' /> <p class=''><i class='spr'></i><span class='po'>部落公众号</span></p></li>
+      <li class='wb_kf'><p class='wb'><a target='_blank' href="//weibo.com/u/6221374881?topnav=1&wvr=6&topsug=1&is_hot=1"><em class='spr'>新浪微博+ </em><i class='spr'></i><b>&lt;</b></a></p><p class='kf'><em class='spr'>客服热线</em><i>0755-83765566</i></p></li>
+    </ul>
+ </div>
+
+   <div class="playpop pop" id='playpop'>
+     <div id="videopop"></div>
+     <a href="javascript:showDialog.hide();" class='close'>×</a>
+   </div>
+
+ <!--#include virtual="inc/foot.inc" -->
+
+ <script src='//vm.gtimg.cn/tencentvideo/txp/js/txplayer.js'></script>
+ <script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+ <script>
+ //此段代码不能放到外链JS中，
+ var setSite = { //设置网站属性
+   siteType: "os" , //必填项:"os"代表是官网，如果不是，则填写actName例如a20160701xxx
+   pageType: "index", //必填项:本页面的定位；按照页面含义填写例如main||list||detail||download||share||page1||pageN
+   pageName: "首页", //必填项:页面中文名
+   osact: 1, //选填项:是否是官网专题(在官网运营的专题)boolean；默认是0；非微社区页面均是1；可以在链接上加入参数osact=1来灵活设置
+   ingame: 0, //选填项:是否投放在游戏APP内boolean；默认是0；可以在链接上加入参数ingame=1来灵活设置
+   stayTime: 1 //选填项:是否需要统计停留时长boolean；默认是0
+ }
+ if (typeof (pgvMain) == 'function') pgvMain();//千万不能忘记！
+ </script>
+ <script src="js/swiper2.js"></script>
+ <script src="js/home.js"></script>
+ <!--<script src="//ossweb-img.qq.com/images/js/jquery/jquery-1.11.3.min.js"></script>-->
+ <script>
+     // 武将数据对接
+     var detailRender = function(num){
+         $.ajax({
+             type: "get",
+             url: "//3.qq.com/zlkdatasys/"+num+".json?"+Math.random(),
+             async:true,
+             dataType: "jsonp",
+             jsonp: "callback",//传递给请求处理程序或页面的，用以获得jsonp回调函数名的参数名(一般默认为:callback)
+             jsonpCallback:"herodetailcallback",//自定义的jsonp回调函数名称，默认为jQuery自动生成的随机函数名，也可以写"?"，jQuery会自动为你处理数据
+             success: function(data){
+                 var img = ["t_ui_icon_chebing.png"]
+                 var name = data["wjmc_1f"],
+                     category = data["xttd_79"],
+                     power = data["wjnlz_09"][0]["wjwlz_0d"],
+                     wisdom = data["wjnlz_09"][0]["wjzmz_1f"],
+                     lead = data["wjnlz_09"][0]["wjtsz_b8"],
+                     des = data["bjgs_f9"],
+                     skill = data["wjjn_82"],
+                     types = '',
+                     types_arr=["ossweb-img/t_ui_icon_bubing.png","ossweb-img/t_ui_icon_qibing.png","ossweb-img/t_ui_icon_gongbing.png","ossweb-img/t_ui_icon_chebing.png"]
+                     str = "",
+                     pic = data["wjzst_51"];
+
+                 if(data["wjlx_28"] == "步将"){
+                     types = types_arr[0]
+                 }else if(data["wjlx_28"] == "骑将"){
+                     types = types_arr[1]
+                 }else if(data["wjlx_28"] == "攻将"){
+                     types = types_arr[2]
+                 }else{
+                     types = types_arr[3]
+                 }
+
+                 for(var i = 0,len = skill.length;i < len;i++){
+                     str += '<li><img src=\''+skill[i]["wjjnicon_4c"]+'\'><span>'+skill[i]["wjjnmc_ac"]+' <i>'+skill[i]["wjjnms_92"]+'</i></span></li>';
+                 }
+                 var $dom = $('<li class="on inif_list_1 intr_li">\n' +
+                     '          <h5>'+name+'<img id="knif" src='+types+' alt=""><em>'+category+'</em></h5>\n' +
+                     '          <ul class=\'many_data\'>\n' +
+                     '              <li class=\'wl\'><i class=\'spr\'></i>武力<span>'+power+'</span></li>\n' +
+                     '              <li class=\'zm\'><i class=\'spr\'></i>智谋<span>'+wisdom+'</span></li>\n' +
+                     '              <li class=\'ts\'><i class=\'spr\'></i>统帅<span>'+lead+'</span></li>\n' +
+                     '          </ul>\n' +
+                     '          <h6>武将介绍</h6>\n' +
+                     '          <p>'+des+'</p>\n' +
+                     '          <h6>武将技能</h6>\n' +
+                     '          <ul class=\'skill\'>\n' +str +
+                     '          </ul>\n' +
+                     '          <img src=\''+pic+'\' alt=\''+name+'\'/>\n' +
+                     '         </li>')
+                 $(".inif_intr_list").html($dom);
+             }
+         });
+     };
+     (function(){
+         var dataList = [];
+         $.ajax({
+             type: "get",
+             url: "//3.qq.com/zlkdatasys/data_zlk_wjlb.json?&"+Math.random(),
+             async:true,
+             dataType: "jsonp",
+             jsonp: "callback",//传递给请求处理程序或页面的，用以获得jsonp回调函数名的参数名(一般默认为:callback)
+             jsonpCallback:"herodetailcallback",//自定义的jsonp回调函数名称，默认为jQuery自动生成的随机函数名，也可以写"?"，jQuery会自动为你处理数据
+             success: function(data){
+                 dataList = data.wjlbsj_18;
+                 render(dataList);
+             }
+         });
+         var render = function(dataList){
+             var arr = [],
+                 name = '',
+                 num = 0,
+                 img_src = '';
+             for(var i = 0;i < 11;i++){
+                 name = dataList[i]["wjmc_1f"];
+                 num = dataList[i]["wjid_2e"];
+                 img_src = dataList[i]["wjtx_b0"];
+                 if(i==0){
+                     var $li = $('<li onclick="PTTSendClick(\'aside\',\'inif_list'+num+'\',\''+name+'\')" onmousedown="detailRender('+num+')" class="grayscale on inif_list_'+num+'"><img src="'+img_src+'" alt=\''+name+'\'/></li>');
+                 }else{
+                     var $li = $('<li onclick="PTTSendClick(\'aside\',\'inif_list'+num+'\',\''+name+'\')" onmousedown="detailRender('+num+')" class="grayscale inif_list_'+num+'"><img src="'+img_src+'" alt=\''+name+'\'/></li>');
+                 }
+                 arr = arr.concat($li);
+             }
+             var $more= $('<li onclick="PTTSendClick(\'aside\',\'inif_list12\',\'更多武将\')" class="inif_list_last"><a href="characterlist.html">+<span class="po">更多精彩武将</span></a></li>')
+             arr = arr.concat($more);
+             $(".inif_list").empty();
+             $(".inif_list").append(arr);
+             detailRender(1);
+         };
+         //武将高亮切换
+         $(".inif_list").on("click","li",function(){
+             $(this).addClass("on").siblings().removeClass("on");
+         });
+     })();
+     // 兵种数据对接
+     var data_arr=[[[],[]],[[],[]],[[],[]],[[],[]]];
+     var bzRender = function(num){
+         $.ajax({
+             type: "get",
+             url: "//3.qq.com/zlkdatasys/bzdata/"+num+".json?"+Math.random(),
+             async:true,
+             dataType: "jsonp",
+             jsonp: "callback",//传递给请求处理程序或页面的，用以获得jsonp回调函数名的参数名(一般默认为:callback)
+             jsonpCallback:"herodetailcallback",//自定义的jsonp回调函数名称，默认为jQuery自动生成的随机函数名，也可以写"?"，jQuery会自动为你处理数据
+             success: function(data){
+                 // console.log(data)
+                 var title = data["bzmc_66"],
+                     des = data["bzjs_af"],
+                     skill = data["bzjn_df"],
+                     pic_src = data["bzpf_c8"][0]["bztp_02"],
+                     str = '';
+                 for(var i = 0,len = skill.length;i < len;i++){
+                     str += "<li><img src='"+skill[i]["bzjnicon_01"]+"' /><span>"+skill[i]["bzjnbt_e8"]+" <i>"+skill[i]["bzjnms_05"]+"</i></span></li>"
+                 }
+                var $li = $('<li class=\'pos_obx on infantry_one\'>\n' +
+                    '           <h4>'+title+'</h4>\n' +
+                    '           <p>'+des+'</p>\n' +
+                    '           <img src=\''+pic_src+'\' alt=\'士兵图\'/>\n' +
+                    '           <ul>\n' + str+
+                    '           </ul>\n' +
+                    '          </li>')
+                 $('.infantry_box ').html($li);
+             }
+
+         });
+     };
+     setTimeout(function(){
+         var bz_data = {}
+         $.ajax({
+             type: "get",
+             url: "//3.qq.com/zlkdatasys/data_zlk_bzlby.json?"+Math.random(),
+             async:true,
+             dataType: "jsonp",
+             jsonp: "callback",//传递给请求处理程序或页面的，用以获得jsonp回调函数名的参数名(一般默认为:callback)
+             jsonpCallback:"callback",//自定义的jsonp回调函数名称，默认为jQuery自动生成的随机函数名，也可以写"?"，jQuery会自动为你处理数据
+             success: function(data){
+                 bz_data = data.bzlb_ba;
+                 var ele_arr=[[],[],[],[]],
+                     //arr[0]: 步兵
+                     //arr[0]: 骑兵
+                     //arr[0]: 弓兵
+                     //arr[0]: 车兵
+                     category = "",
+                     type = "",
+                     num = 0;
+                 for(var i = 0,len = bz_data.length;i < len;i++){
+                     category = bz_data[i]["bzlx_ac"];
+                     type = bz_data[i]["bzmc_66"];
+                     num = bz_data[i]["bzid_7f"];
+                     if(category == "步兵"){
+                         data_arr[0][0].push(num)
+                         data_arr[0][1].push(type)
+                     }else if(category == "骑兵"){
+                         data_arr[1][0].push(num)
+                         data_arr[1][1].push(type)
+                     }else if(category == "弓兵"){
+                         data_arr[2][0].push(num)
+                         data_arr[2][1].push(type)
+                     }else{
+                         data_arr[3][0].push(num)
+                         data_arr[3][1].push(type)
+                     }
+                 }
+
+                 for( var j =0; j < 4; j++ ) {
+                     var $li = $("<li class='intr_child on infantry'>\
+                                        <ul class='infantry_box widt_box'>\
+                                        </ul>\
+                                        <ul class='aux_list'>\
+                                            <li onclick='bzRender("+data_arr[j][0][0]+")' class='spr on'>"+ data_arr[j][1][0] +"</li>\
+                                            <li onclick='bzRender("+data_arr[j][0][1]+")' class='spr'>"+ data_arr[j][1][1] +"</li>\
+                                            <li onclick='bzRender("+data_arr[j][0][2]+")' class='spr'>"+ data_arr[j][1][2] +"</li>\
+                                            <li onclick='bzRender("+data_arr[j][0][3]+")' class='spr'>"+ data_arr[j][1][3] +"</li>\
+                                            <li onclick='bzRender("+data_arr[j][0][4]+")' class='spr'>"+ data_arr[j][1][4] +"</li>\
+                                        </ul>\
+                                       </li>");
+                     ele_arr[j].push($li);
+                 }
+
+                 $(".intr_box").html(ele_arr[0]);
+                 bzRender(1);
+                 var no = 0;
+                 $(".sum_list li").on("click",function(){
+                     // $(".intr_box").html("");
+                     $(this).addClass("on").siblings().removeClass("on")
+                     no = $(this).index();
+                     $(".intr_box").html(ele_arr[no]);
+                     bzRender(data_arr[no][0][0]);
+                     // console.log(no)
+                 })
+             }
+         });
+         //兵种高亮切换
+         $(".intr_box").on("click",".aux_list li",function(){
+             $(this).addClass("on").siblings().removeClass("on");
+         });
+     },500)
+
+ </script>
+ </body>
+ </html>

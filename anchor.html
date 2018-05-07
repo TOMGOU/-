@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <!--#include virtual="inc/meta.inc" -->
+
+    <title>这三国 你从未见过-真龙霸业官方网站-腾讯游戏</title>
+    <!-- 页面设计：微聚cp | 页面制作：微聚cp | 创建：2018-02-11 -->
+    <link rel="stylesheet" href="css/sidebar.css">
+    <style>
+        /*主体部分的css*/
+        .header_wrap {
+            background: url(ossweb-img/anchorbg.jpg) no-repeat center 80px;
+        }
+        .container {
+            padding-bottom: 204px;
+            background: url(ossweb-img/bottombg2.jpg) no-repeat center bottom;
+        }
+
+        .anchor-center {
+            position: relative;
+            width: 1160px;
+            margin: auto;
+            padding: 0 40px;
+            background: #fff url(ossweb-img/bg2.jpg) no-repeat center  30px ;
+        }
+        .anchor-center:before {
+            content: "";
+            display: block;
+            position: absolute;
+            top:-5px;
+            left: -64px;
+            width: 1361px;
+            height: 38px;
+            background: url(ossweb-img/bg3.png) no-repeat;
+
+        }
+        .anchor {
+            padding-left: 23px;
+            padding-top: 80px;
+            height: 896px;
+        }
+        .anchor-wrap {
+            position: relative;
+        }
+        .anchor a.back {
+            position: relative;
+            top:-20px;
+            float: right;
+            font-size: 16px;
+            margin-right: 14px;
+            color: #000000;
+        }
+        .anchor a.back:after {
+            content: "";
+            position: absolute;
+            left: -38px;
+            top: 8px;
+            width: 27px;
+            height: 8px;
+            background: url(ossweb-img/css_sp.png) no-repeat -15px -220px;
+        }
+        .anchor h2 {
+            position: relative;
+            float: left;
+            width: 34px;
+            font-size: 34px;
+            color: #2c324a;
+            font-weight: bold;
+            line-height: 40px;
+        }
+        .anchor h2 em {
+            color: #f8997a;
+            font-weight: bold;
+        }
+        .anchor .anchor-img {
+            float: left;
+            width: 489px;
+            height: 573px;
+            padding-top: 33px;
+            margin: 15px 40px 0 63px;
+            background: url(ossweb-img/anchorbg1.png) no-repeat;
+        }
+        .anchor-img img {
+            display: block;
+            width: 420px;
+            height: 537px;
+            margin: auto;
+            border: 1px solid #f67950;
+        }
+        .anchor-mes {
+            float: right;
+            width: 487px;
+            height: 586px;
+            margin-right: 15px;
+            margin-top: 15px;
+            background: url(ossweb-img/anchorbg2.png) no-repeat;
+        }
+       .anchor-mes h5 {
+           position: relative;
+           top:-10px;
+           color: #f8997a;
+           font-size: 24px;
+           font-weight: bold;
+           text-align: center;
+           letter-spacing: 5px;
+       }
+        .anchor-mes ul {
+            padding-left: 60px;
+            margin-top: 54px;
+            margin-bottom: 58px;
+        }
+        .anchor-mes ul li {
+            position: relative;
+            margin-bottom:10px;
+            color: #f8997a;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        .anchor-mes ul li p {
+            position: absolute;
+            top:-30px;
+            display: inline-block;
+            width: 104px;
+            height: 93px;
+            margin: 0 20px;
+            padding-top: 14px;
+            background-position: -470px -238px;
+        }
+        .anchor-mes ul li p.one {
+            left: 200px;
+        }
+        .anchor-mes ul li p img{
+            display: block;
+            width: 84px;
+            height: 84px;
+            margin: auto;
+        }
+        .anchor-mes ul li p span {
+            width: 100%;
+            height: 34px;
+            margin: 0;
+            margin-top:35px;
+            text-align: center;
+            line-height: 34px;
+
+        }
+        .anchor-mes ul li:nth-last-child(1) {
+            margin-top: 30px;
+        }
+        .anchor-mes ul li span {
+            position: relative;
+            overflow: hidden;
+            top:-24px;
+            display: inline-block;
+            width: 311px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            color: #2c324a;
+            font-weight: normal;
+            margin-left: 110px;
+        }
+        .anchor-btn {
+            position: absolute;
+            bottom: 60px;
+            right: 122px;
+            display: block;
+            width: 227px;
+            height: 66px;
+            margin: 130px auto 0;
+            background-position: -51px -302px;
+            text-align: center;
+            line-height: 66px;
+            color: #fff!important;
+            font-size: 20px;
+        }
+        .slide-container {
+            position: relative;
+            width: 835px;
+            height: 287px;
+            margin: 30px auto 0;
+            padding-top: 13px;
+        }
+        .slide-container > i {
+            position: absolute;
+            top:31px;
+            width: 50px;
+            height: 119px;
+            background: url(ossweb-img/anchorlist.png) no-repeat left top;
+            z-index: 999;
+        }
+        .slide-container > i.left {
+            left: -11px;
+        }
+        .slide-container > i.right {
+            right: -61px;
+            background: url(ossweb-img/anchorlist.png) no-repeat right top;
+        }
+        .slide-container .slide-wrap {
+            position: relative;
+            overflow: hidden;
+            top:0;
+            width: 835px;
+            height: 200px;
+            margin-left: 35px;
+        }
+        .slide-container .slide-wrap ul {
+            position: absolute;
+            top:0;
+            left: 0;
+            width: 20000px;
+        }
+        .slide-container .slide-wrap ul li{
+            float: left;
+            width: 155px;
+            height: 144px;
+            margin-right: 10px;
+            padding-top: 11px;
+            border-radius: 50%;
+            border: 1px solid #d5d7dc;
+            cursor: pointer;
+        }
+        .slide-container .slide-wrap ul li img {
+            display: block;
+            width: 126px;
+            height: 126px;
+            margin: auto;
+            border-radius: 50%;
+        }
+        .slide-container .slide-wrap ul li p {
+            position: relative;
+            width: 125px;
+            height: 41px;
+            margin: auto;
+            border: 1px solid #d5d7dc;
+            font-size: 18px;
+            color: #444;
+            background: #fff;
+            text-align: center;
+            line-height: 41px;
+        }
+        .slide-container .slide-wrap ul li p:after {
+            content: "";
+            position: absolute;
+            left: 5px;
+            width: 114px;
+            height: 100%;
+            border-left: 1px solid #d5d7dc;
+            border-right: 1px solid #d5d7dc;
+        }
+        .slide-container .slide-wrap ul li.on {
+            position: relative;
+            border-color: #f8997a;
+        }
+
+        .slide-container .slide-wrap ul li.on p {
+            background: #f8997a;
+            color: #fff;
+        }
+        .slide-container .slide-wrap ul li.on p:after {
+            top:2px;
+            height: 35px;
+            border: 1px solid #feebe4;
+        }
+        .arrows a {
+            position: absolute;
+            top:65px;
+            width: 22px;
+            height: 44px;
+            
+        }
+        .arrows a.prev {
+            left: -52px;
+            background-position: -409px -247px;
+        }
+        .arrows a.next {
+            right: -100px;
+            background-position: -435px -248px;
+        }
+        .arrows a.disabled {
+            opacity:.35;
+            transition: all .3s;;
+        }
+        .article-list {
+            margin-top: 20px;
+            padding-top: 35px;
+            padding-bottom: 50px;
+        }
+
+        .article-list h4 {
+            float: left;
+            margin-bottom: 25px;
+            color: #666;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .article-list h4:before {
+            content: "";
+            display: inline-block;
+            width: 6px;
+            height: 19px;
+            margin-right: 16px;
+            background: #c4a85b;
+        }
+        .article-list a {
+            color: #444;
+        }
+        .article-list a:hover span {
+            color: #c4a85b;
+        }
+        .article-list .more {
+            float: right;
+        }
+        .article-list .more:hover {
+            color: #c4a85b;
+        }
+        .article-list .more:after {
+            content: "";
+            display: inline-block;
+            position: relative;
+            top:6px;
+            width: 25px;
+            height: 25px;
+            margin-left: 8px;
+            background: url(ossweb-img/css_sp.png) no-repeat -4px -307px;
+        }
+        .article-list ul {
+            position: relative;
+            width: 1190px;
+            left: -15px;
+        }
+
+        .article-list ul li {position: relative;float: left;width: 273px;height: 220px;margin: 0 12px 50px;}
+        .article-list ul li img {display: block;width: 273px;height: 183px;}
+        .article-list ul li p {overflow: hidden;width: 271px;height: 52px;border: 1px solid #dedfe3;border-top: none;text-overflow: ellipsis;white-space: nowrap;text-align: left;color: #444;line-height: 52px;text-indent: 10px}
+        .article-list ul li p.mesg {position: absolute;bottom: -2px;left: 0;width: 271px;height: 38px;background: rgba(0,0,0,.5);color: #eceef2;line-height: 38px;z-index: 100;}
+        .article-list ul li p.mesg span {float: left;margin-left: 14px;}
+        .article-list ul li p.mesg em {float: right;width: 80px;overflow: hidden;margin-right: 5px;text-overflow: ellipsis;white-space: nowrap;text-align: left;}
+        .article-list ul li p.mesg i {content: "";position: absolute;right: 90px;top:11px;width: 21px;height: 14px;background-position: -114px -221px;z-index: 66;}
+        .article-list ul li a {position: absolute;top: 0;left: 0;width: 100%;height: 183px;background-color: rgba(0,0,0,0);z-index: 99;}
+        .article-list ul li a:before {
+            content: "";
+            position: absolute;
+            top:0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,.1);
+        z-index: 99;}
+        .article-list ul li a:after {content: "";position: absolute;top:0;left: 0;right: 0;bottom: 0;width: 32px;height: 37px;margin: auto;background: url(ossweb-img/css_sp.png) no-repeat -155px -216px;z-index: 120;}
+        .article-list ul li a:hover span{
+            color: #eceef2;
+        }
+        .article-list ul li strong {
+            position: absolute;
+            top:0;
+            left: 0;
+            width: 101px;
+            height: 36px;
+            text-align: center;
+            line-height: 36px;
+            z-index: 110;
+            color: #fff;
+            background: rgba(0,0,0,.7);
+            border-radius: 0 0 50px 0;
+        }
+    </style>
+</head>
+<body>
+<div class="main">
+    <!--导航-->
+    <!--#include virtual="inc/head.inc" -->
+    <!--主体部分-->
+    <div class="container">
+        <!--新闻中心-->
+        <div class="anchor-center">
+            <!--主播主要信息-->
+            <div class="anchor">
+                <a href="index.html" class="back">返回首页</a>
+                <h2><em>主播</em>专区</h2>
+                <div class="anchor-wrap clearfix">
+                    <!--主播照片-->
+                    <div class="anchor-img">
+                        <img src="ossweb-img/author.jpg" alt="">
+                    </div>
+                    <!--主播信息-->
+                    <div class="anchor-mes" id="anchor-mes">
+                        <h5>大乔</h5>
+                        <ul>
+                            <li>
+                                性格： <span id="xg">冷漠，低调</span>
+                            </li>
+                            <li>
+                                TA的宣言：<span class="xy">小小的身躯、大大的梦想、超神全场！</span>
+                            </li>
+                            <li>
+                                TA的爱好：<span class="ah">木瓜 \ 牛奶</span>
+                            </li>
+                            <li>
+                                口头禅：<span class="ktc">讨厌</span>
+                            </li>
+                            <li>
+                                最爱武将：
+                                <p class="sp zero">
+                                    <img src="ossweb-img/share.png" alt="">
+                                    <span>董卓</span>
+                                </p>
+                                <p class="sp one">
+                                    <img src="ossweb-img/share.png" alt="">
+                                    <span>董卓</span>
+                                </p>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <a href="" class="anchor-btn sp" target=_blank onclick="PTTSendClick('main','anchor','查看主播间');">查看主播间</a>
+                </div>
+                <!--轮播图-->
+                <div class="slide-container">
+                    <div class="slide-wrap">
+                        <ul id="slide" class="clearfix">
+                            <!--<li class="">-->
+                                <!--<img src="ossweb-img/author.jpg" alt="">-->
+                                <!--<p>大乔</p>-->
+                            <!--</li>-->
+                            <!--<li>-->
+                                <!--<img src="ossweb-img/author.jpg" alt="">-->
+                                <!--<p>大乔</p>-->
+                            <!--</li>-->
+                            <!--<li>-->
+                                <!--<img src="ossweb-img/author.jpg" alt="">-->
+                                <!--<p>大乔</p>-->
+                            <!--</li>-->
+                            <!--<li>-->
+                                <!--<img src="ossweb-img/author.jpg" alt="">-->
+                                <!--<p>大乔</p>-->
+                            <!--</li>-->
+                            <!--<li>-->
+                                <!--<img src="ossweb-img/author.jpg" alt="">-->
+                                <!--<p>大乔</p>-->
+                            <!--</li>-->
+                            <!--<li></li>-->
+                            <!--<li></li>-->
+                            <!--<li></li>-->
+                            <!--<li></li>-->
+                            <!--<li></li>-->
+                            <!--<li></li>-->
+                        </ul>
+                    </div>
+                    <i class="left"></i>
+                    <i class="right"></i>
+                    <div class="arrows">
+                        <a href="javascript:;" class="prev sp" onclick="PTTSendClick('slidewrap','prev','上一个');"></a>
+                        <a href="javascript:;" class="next sp" onclick="PTTSendClick('slidewrap','next','下一个');"></a>
+                    </div>
+                </div>
+            </div>
+            <!--主播列表-->
+            <div class="article-list">
+                <div class="clearfix">
+                    <h4>主播间</h4>
+                    <a href="javascript:;" class="more" onclick="PTTSendClick('article-list','more1','更多');">更多</a>
+                </div>
+                <ul class="clearfix">
+                    <li>
+                        <a href="javascript:;">
+                            <img src="ossweb-img/anchorfm1.jpg" alt="">
+                            <p>视频标题视频标题视频标题视</p>
+                            <p class="mesg">
+                                <span>02-28</span>
+                                <em>9527</em>
+                                <i class="sp"></i>
+                            </p>
+                            <strong>大乔</strong>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <img src="ossweb-img/anchorfm1.jpg" alt="">
+                            <p>视频标题视频标题视频标题视</p>
+                            <p class="mesg">
+                                <span>02-28</span>
+                                <em>9527</em>
+                                <i class="sp"></i>
+                            </p>
+                            <strong>大乔</strong>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <img src="ossweb-img/anchorfm1.jpg" alt="">
+                            <p>视频标题视频标题视频标题视</p>
+                            <p class="mesg">
+                                <span>02-28</span>
+                                <em>9527</em>
+                                <i class="sp"></i>
+                            </p>
+                            <strong>大乔</strong>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <img src="ossweb-img/anchorfm1.jpg" alt="">
+                            <p>视频标题视频标题视频标题视</p>
+                            <p class="mesg">
+                                <span>02-28</span>
+                                <em>9527</em>
+                                <i class="sp"></i>
+                            </p>
+                            <strong>大乔</strong>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <img src="ossweb-img/anchorfm1.jpg" alt="">
+                            <p>视频标题视频标题视频标题视</p>
+                            <p class="mesg">
+                                <span>02-28</span>
+                                <em>9527</em>
+                                <i class="sp"></i>
+                            </p>
+                            <strong>大乔</strong>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <img src="ossweb-img/anchorfm1.jpg" alt="">
+                            <p>视频标题视频标题视频标题视</p>
+                            <p class="mesg">
+                                <span>02-28</span>
+                                <em>9527</em>
+                                <i class="sp"></i>
+                            </p>
+                            <strong>大乔</strong>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <img src="ossweb-img/anchorfm1.jpg" alt="">
+                            <p>视频标题视频标题视频标题视</p>
+                            <p class="mesg">
+                                <span>02-28</span>
+                                <em>9527</em>
+                                <i class="sp"></i>
+                            </p>
+                            <strong>大乔</strong>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <img src="ossweb-img/anchorfm1.jpg" alt="">
+                            <p>视频标题视频标题视频标题视</p>
+                            <p class="mesg">
+                                <span>02-28</span>
+                                <em>9527</em>
+                                <i class="sp"></i>
+                            </p>
+                            <strong>大乔</strong>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+<!--#include virtual="inc/foot.inc" -->
+<script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+
+<script src='//vm.gtimg.cn/tencentvideo/txp/js/txplayer.js'></script>
+<script>
+    //此段代码不能放到外链JS中，
+    var setSite = { //设置网站属性
+        siteType: "os", //必填项:"os"代表是官网，如果不是，则填写actName例如a20160701xxx
+        pageType: "anchor", //必填项:本页面的定位；按照页面含义填写例如main||list||detail||download||share||page1||pageN
+        pageName: "主播列表", //必填项:页面中文名
+        osact: 1, //选填项:是否是官网专题(在官网运营的专题)boolean；默认是0；非微社区页面均是1；可以在链接上加入参数osact=1来灵活设置
+        ingame: 0, //选填项:是否投放在游戏APP内boolean；默认是0；可以在链接上加入参数ingame=1来灵活设置
+        stayTime: 0 //选填项:是否需要统计停留时长boolean；默认是0
+    }
+    if (typeof (pgvMain) == 'function') pgvMain();//千万不能忘记！
+
+
+
+
+//    请求数据
+        $.ajax({
+        type: "get",
+        url: "//3.qq.com/zlkdatasys/zhubodata//1.json",
+        dataType: "jsonp",
+        jsonp: "callback",//传递给请求处理程序或页面的，用以获得jsonp回调函数名的参数名(一般默认为:callback)
+        jsonpCallback:"herodetailcallback",//自定义的jsonp回调函数名称，默认为jQuery自动生成的随机函数名，也可以写"?"，jQuery会自动为你处理数据
+        success: function(json){
+
+            var zbarr = json.zbsj_9d,
+                zb_length = zbarr.length;
+            console.log(zbarr);
+            // 动态插入li
+            for( var i = 0; i < zb_length; i++) {
+                var $li = $("<li>\
+                               <img src='"+ zbarr[i].zbtxtp_87 +"' alt=''>\
+                               <p>"+ zbarr[i].zbmc_f2 +"</p>\
+                            </li>");
+                $("#slide").append($li);
+            }
+            // 轮播图
+            var num = 0;
+            // 默认第一个执行
+            fn(0);
+            function fn(index) {
+                $(".anchor-img img").attr("src",zbarr[index].zbdt_12);
+                $("#anchor-mes h5").html(zbarr[index].zbmc_f2);
+                // 换介绍
+                $("#anchor-mes .xg").html(zbarr[index].zbxg_0d);
+                $("#anchor-mes .xy").html(zbarr[index].zbxy_62);
+                $("#anchor-mes .ah").html(zbarr[index].zbah_b3);
+                $("#anchor-mes .ktc").html(zbarr[index].zbkt_8c);
+                $("#anchor-mes .zero").html("<img src='"+ zbarr[index].zbzawj_d6[0].zbzawjtx_1b+"'> <span>"+ zbarr[index].zbzawj_d6[0].zbzawjmc_73 +"</span>");
+                $("#anchor-mes .one").html("<img src='"+ zbarr[index].zbzawj_d6[1].zbzawjtx_1b+"'> <span>"+ zbarr[index].zbzawj_d6[1].zbzawjmc_73 +"</span>");
+                $(".anchor-btn").attr("href","anchorroom.html?id="+index);
+
+            }
+
+            $("#slide li").eq(0).addClass("on");
+            $("#slide").on("click","li",function () {
+                var index = $(this).index();
+                num = index;
+                $(this).addClass("on").siblings().removeClass("on");
+                // 换主播名字
+
+                $("#slide").stop().animate({
+                    left : -167 * num
+                },300);
+                fn(num);
+                if( num > 0 ) {
+                    $(".prev").removeClass("disabled");
+                }else {
+                    $(".prev").addClass("disabled");
+                }
+                if( num ==  (zb_length-1) ) {
+                    $(".next").addClass("disabled");
+                }else {
+                    $(".next").removeClass("disabled");
+                }
+            });
+            // 默认左点击黑
+            $(".prev").addClass("disabled");
+            // 右点击
+            $(".next").on("click",function () {
+                num++;
+                $(".prev").removeClass("disabled");
+                console.log( num );
+                if( num >= zb_length-1 ) {
+                    num = zb_length-1;
+                    $(this).addClass("disabled");
+                }
+                $("#slide").stop().animate({
+                    left : -167 * num
+                },300);
+                fn(num);
+                $("#slide li").eq(num).addClass("on").siblings().removeClass("on");
+            });
+            // 昨点击
+            $(".prev").on("click",function () {
+                num--;
+                $(".next").removeClass("disabled");
+                if( num <= 0 ) {
+                    num = 0;
+                    $(this).addClass("disabled");
+                }
+                $("#slide").stop().animate({
+                    left : -167 * num
+                },300);
+                fn(num);
+                $("#slide li").eq(num).addClass("on").siblings().removeClass("on");
+            });
+
+
+
+        }
+    });
+
+
+
+</script>

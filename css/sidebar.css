@@ -1,0 +1,10 @@
+/*²à±ßÀ¸*/
+.list-wrap .sidebar {width: 260px;height: 800px;background: #434a68;font-size: 18px;color: #d9dadf;}
+.sidebar .wxcode p,.qqcode p{height: 54px;border-bottom: 1px solid #7c8196;border-top: 1px solid #7c8196;background-position: -163px -151px;text-align: center;line-height: 54px;}
+.wxcode img,.qqcode img {display: block;margin: 25px auto;}
+.weibo {margin: 12px 0;border-bottom: 1px solid #7c8196;border-top: 1px solid #7c8196;}
+.weibo p,.weibo span{display: inline-block;width: 159px;height: 76px;background-position: -437px -151px;text-align: center;line-height: 76px;}
+.weibohref{display:block;}
+.weibo img {float: right;margin-right: 25px;margin-top: 9px;}
+.sidebar .kf {width: 126px;height: 39px;margin-bottom: 8px;background-position: -15px -151px;text-align: center;line-height: 39px;color: #fff;}
+.sidebar .tel {font-size: 28px;text-align: center;}
