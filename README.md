@@ -1,4 +1,7 @@
-# -
+# 3_zlby
+
+demo: https://tomgou.github.io/3-zlby/
+
 ajax use experience in work 
 
 6pages include 8 ajax request
